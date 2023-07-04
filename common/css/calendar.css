@@ -1,0 +1,99 @@
+/*----- reserve------*/
+.bgWh { margin-bottom: 170px; }
+.bgWh .pc { display: block !important; }
+.bgWh .sp { display: none !important; }
+.bgWh h3 { font-size: 30px; margin-bottom: 30px; text-align: center; }
+.bgWh .fs32 { font-size: 32px !important; }
+.bgWh .fs14 { font-size: 14px !important; }
+.bgWh .mb10 { margin-bottom: 10px !important; }
+.bgWh .mt10 { margin-top: 10px !important; }
+.bgWh .mt20 { margin-top: 20px !important; }
+.bgWh .mt30 { margin-top: 30px !important; }
+.bgWh .mb30 { margin-bottom: 30px !important; }
+.bgWh .txtred { color: rgb(193, 25, 32) !important; }
+.bgWh .w300 { width: 300px !important; }
+.bgWh  { background: rgb(255, 255, 255); color: rgb(0, 0, 0); padding: 60px 15px; max-width: 1200px; width: 90%; margin: 0px auto; box-sizing: border-box; }
+.bgWh .btnReserve { max-width: 460px; width: 100%; margin: 0px auto; display: block; background: linear-gradient(rgb(162, 144, 129), rgb(97, 72, 56)); box-sizing: border-box; padding: 15px 5px; color: rgb(255, 255, 255); text-align: center; position: relative; transition: all 0.5s ease 0s; }
+.bgWh .btnReserve::after { content: ""; display: block; position: absolute; top: calc(50% - 4px); right: 15px; width: 8px; height: 8px; border-top: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); transform: rotate(45deg); }
+.bgWh .btnReserve:hover, .bgWh .btnReserve:active { opacity: 0.7; }
+.bgWh .itemWrap { border: 1px solid rgb(4, 0, 0); max-width: 1105px; width: 100%; margin: 0px auto 30px; padding: 30px 20px; text-align: center; box-sizing: border-box; }
+.bgWh .itemWrap p { font-size: 18px; }
+.bgWh .itemWrap img { margin: 0px auto; }
+.bgWh .itemWrap .small { font-size: 14px; }
+.bgWh .btnReserveInner { max-width: 320px; width: 100%; margin: 0px auto 50px; }
+.bgWh .note_box { color: rgb(193, 25, 32); border: 1px solid rgb(193, 25, 32); padding: 10px 5px; font-size: 16px; font-weight: bold; margin: 20px auto 0px; max-width: 460px; width: 100%; box-sizing: border-box; }
+.bgWh h4 { text-align: center; color: rgb(99, 56, 26); font-size: 24px; letter-spacing: 2px; margin-bottom: 35px; }
+.bgWh h4 a { color: rgb(99, 56, 26); text-decoration: underline; display: inline-block; transition: all 0.5s ease 0s; }
+.bgWh h4 a:hover, .bgWh h4 a:active { opacity: 0.7; }
+.bgWh .detailArea { display: flex; justify-content: space-between; max-width: 1105px; margin: 0px auto; }
+.bgWh .detailArea > div { width: 48%; border: 1px solid rgb(99, 56, 26); padding: 25px; box-sizing: border-box; }
+.bgWh .detailArea > div > p { font-size: 16px; margin-bottom: 25px; }
+.bgWh .detailArea .boxTtl { text-align: center; margin-bottom: 30px; }
+.bgWh .detailArea .boxTtl > span { display: inline-block; font-size: 20px; padding-bottom: 3px; border-bottom: 1px solid rgb(99, 56, 26); text-align: center; color: rgb(99, 56, 26); }
+.bgWh .detailArea dl:not(:last-of-type) { margin-bottom: 25px; }
+.bgWh .detailArea dl:last-of-type { margin-bottom: 35px; }
+.bgWh .detailArea dl { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: flex-start; }
+.bgWh .detailArea dt { width: 100px; background: rgb(99, 56, 26); padding: 3px; box-sizing: border-box; font-size: 16px; text-align: center; color: rgb(255, 255, 255); }
+.bgWh .detailArea dd { width: calc(100% - 120px); font-size: 16px; }
+.bgWh .detailArea .note_list { background: rgb(244, 242, 242); padding: 20px; box-sizing: border-box; margin-bottom: 10px; }
+.bgWh .detailArea .note_list li { position: relative; padding-left: 1.3rem; font-size: 14px; }
+.bgWh .detailArea .note_list li span { position: absolute; left: 0px; color: rgb(99, 56, 26); }
+.bgWh .detailArea .contact { padding: 25px 0px 0px; width: 100%; border-right: none; }
+.bgWh .detailArea .contact h2 { font-size: 15px; width: 90%; max-width: 370px; margin-right: auto; margin-left: auto; padding-bottom: 17px; text-align: center; }
+.bgWh .detailArea .contact .tel { width: 90%; max-width: 370px; margin-right: auto; margin-left: auto; padding-bottom: 12px; }
+.bgWh .detailArea .contact .business { width: 90%; max-width: 370px; margin-right: auto; margin-left: auto; text-align: center; }
+.bgWh .reserveTableArea { margin: 30px auto 50px; max-width: 817px; width: 100%; }
+.bgWh .reserveTableArea table { border-collapse: collapse; border-spacing: 0px; width: 100%; border: 1px solid rgb(170, 168, 168); box-sizing: border-box; }
+.bgWh .reserveTableArea table:not(:last-of-type) { margin-bottom: 20px; }
+.bgWh .reserveTableArea table th, .bgWh .reserveTableArea table td { width: calc(20%); border-right: 1px solid rgb(170, 168, 168); border-bottom: 1px solid rgb(170, 168, 168); vertical-align: middle; font-size: 18px; word-break: break-word; }
+.bgWh .reserveTableArea table thead th { padding: 3px 5px; }
+.bgWh .reserveTableArea table th { font-weight: bold; }
+.bgWh .reserveTableArea .sat { background: rgb(187, 212, 239); }
+.bgWh .reserveTableArea .sun { background: rgb(247, 200, 206); }
+.bgWh .reserveTableArea .gray { background: rgb(237, 237, 236); }
+.bgWh .reserveTableArea .g999 { background: rgb(59, 59, 65); }
+.bgWh .reserveTableArea .red { color: rgb(255, 255, 255); background: rgb(193, 25, 32); }
+.bgWh .note { font-size: 13px !important; }
+.bgWh .textCenter { text-align: center !important; }
+.bgWh .textRight { text-align: right !important; }
+.bgWh .textLeft { text-align: left; }
+.bgWh .reserveTablenote { display: flex; justify-content: space-between; flex-direction: row-reverse; }
+.bgWh .reserveTablenote div:first-of-type { margin-left: 20px; }
+@media screen and (max-width: 768px) {
+  .bgWh .pc { display: none !important; }
+  .bgWh .sp { display: block !important; }
+  .bgWh h3 { font-size: 20px; margin-bottom: 20px; }
+  .bgWh h3 span { font-size: 24px; }
+  .bgWh .itemWrap { padding: 15px; }
+  .bgWh .itemWrap p { font-size: 16px; }
+  .bgWh .itemWrap .small { font-size: 13px; }
+  .bgWh .note_box { padding: 10px 5px; font-size: 14px; }
+  .bgWh h4 { font-size: 18px; margin-bottom: 25px; }
+  .bgWh .detailArea { display: block; }
+  .bgWh .detailArea > div { width: 100%; padding: 15px; }
+  .bgWh .detailArea > div:not(:last-of-type) { margin-bottom: 30px; }
+  .bgWh .detailArea .boxTtl { margin-bottom: 20px; }
+  .bgWh .detailArea .note_list { padding: 10px; }
+  .bgWh .detailArea dt { width: 80px; padding: 3px; font-size: 14px; margin-bottom: 15px; }
+  .bgWh .detailArea dd { width: calc(100% - 95px); font-size: 14px; }
+  .bgWh .detailArea > div > p { font-size: 14px; margin-bottom: 10px; line-height: 1.4; }
+  .bgWh .detailArea .contact { padding: 15px 0px 0px; border-bottom: none; }
+  .bgWh .detailArea .contact .tel { max-width: 280px; padding-bottom: 7px; }
+  .bgWh .reserveTableArea { margin: 20px auto 30px; max-width: 817px; width: 100%; }
+  .bgWh .reserveTablenote { display: block; text-align: left; }
+  .bgWh .reserveTableArea table th, .bgWh .reserveTableArea table td { width: 10.5%; font-size: 11px; }
+  .bgWh .w100 { width: 100% !important; max-width: 300px !important; }
+}
+.modaal-close {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+.modaal-close:after, .modaal-close:before {
+  background: #000;
+  width: 1px;
+  height: 35px;
+}
+.modaal-content-container {
+  padding: 30px 0;
+}

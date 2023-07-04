@@ -1,0 +1,550 @@
+/*---------------------------------------------------------------
+
+format
+//  PJ独自のフォーマット管理はこちらでお願いします
+
+--------------------------------------------------------------- */
+
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #3b3b41;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: YakuHanMP, "Times New Roman", "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Noto Serif JP", serif;
+}
+input[type="password"],
+input[type="submit"] {
+  font-family: YakuHanMP, "Times New Roman", "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Noto Serif JP", serif;
+}
+
+figure {
+  position: relative;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+img[src$=".svg"] {
+	width: 100%;
+	height: auto;
+}
+
+
+/*---------------------------------------------------------------
+
+ commonKeyvisual
+
+--------------------------------------------------------------- */
+.commonKeyvisual {
+  position: relative;
+  height: 560px;
+}
+.commonKeyvisual .imagearea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: no-repeat center center / cover;
+  z-index: 1;
+}
+.commonKeyvisual .imagearea:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 60%;
+  background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(0,0,0,0.8) 100%);
+  background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(0,0,0,0.8) 100%);
+  background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(0,0,0,0.8) 100%);
+  z-index: 1;
+}
+.commonKeyvisual .imagearea.dark:after {
+  background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(0,0,0,1) 100%);
+}
+.commonKeyvisual .imagearea .imgCap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  color: #fff;
+  font-size: 10px;
+  line-height: 1;
+  text-align: right;
+  text-shadow:0px 0px 1px #000,0 0 5px #000,0 0 10px #000,0 0 15px #000,0 0 20px #000,0 0 30px #000,0 0 40px #000;
+  z-index: 3;
+}
+.commonKeyvisual .textArea {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 50px;
+  color: #fff;
+  z-index: 5;
+}
+.commonKeyvisual .textArea .wide {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.commonKeyvisual .textArea .title {
+  margin-bottom: 15px;
+  font-size: 40px;
+  line-height: 1.3;
+}
+.commonKeyvisual .textArea .lead {
+  font-size: 24px;
+  line-height: 1.5;
+}
+.commonKeyvisual .textArea .inBtn {
+  margin-top: 30px;
+}
+.commonKeyvisual .textArea .inBtn a {
+  display: block;
+  max-width: 200px;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  background-color: #003c7a;
+  text-decoration: none;
+}
+@media only screen and (max-width:768px) {
+  .commonKeyvisual {
+    height: auto;
+  }
+  .commonKeyvisual .imagearea {
+    position: relative;
+    padding-bottom: 60%;
+  }
+  .commonKeyvisual .imagearea:after {
+    display: none;
+  }
+  .commonKeyvisual .textArea {
+    position: static;
+    color: #000;
+    background-color: #fff;
+  }
+  .commonKeyvisual .textArea .wide {
+    padding: 30px 20px;
+  }
+  .commonKeyvisual .textArea .title {
+    font-size: 30px;
+  }
+  .commonKeyvisual .textArea .lead {
+    font-size: 20px;
+  }
+  .commonKeyvisual .textArea .inBtn {
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+/*---------------------------------------------------------------
+
+ common styles
+
+--------------------------------------------------------------- */
+
+/* commonWrapper
+------------------------------*/
+.commonWrapper {
+  max-width: 1352px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* commonSection
+------------------------------*/
+.commonSection {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.commonSection:last-child {
+  margin-bottom: 0;
+}
+@media only screen and (max-width:768px) {
+  .commonSection {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+
+/* commonBigTitle01
+------------------------------*/
+.commonBigTitle01 {
+  margin-bottom: 35px;
+  font-size: 36px;
+  line-height: 1.4;
+}
+.commonBigTitle01 sup {
+  font-size: 0.4em;
+  vertical-align: top;
+}
+.commonBigTitle01 small {
+  display: inline-block;
+  font-size: 0.6em;
+}
+@media screen and (max-width:768px) {
+  .commonBigTitle01 {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+  .commonBigTitle01 sup {
+    font-size: 10px;
+  }
+}
+
+
+/* commonBdrTitle01
+------------------------------*/
+.commonBdrTitle01 {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  padding-bottom: 17px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.commonBdrTitle01:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  content: '';
+  width: 40px;
+  height: 1px;
+  background-color: #3b3b41;
+}
+@media screen and (max-width:768px) {
+  .commonBdrTitle01 {
+    margin-bottom: 17px;
+    padding-bottom: 12px;
+    font-size: 16px;
+  }
+}
+
+
+
+/* commonLead
+------------------------------*/
+.commonLead {
+  margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+@media screen and (max-width:768px) {
+  .commonLead {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+/* commonImgcap
+------------------------------*/
+.commonImgcap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  color: #fff;
+  font-size: 10px;
+  line-height: 1;
+  text-align: right;
+  text-shadow:0px 0px 1px #000,0 0 5px #000,0 0 10px #000,0 0 15px #000,0 0 20px #000,0 0 30px #000,0 0 40px #000;
+  z-index: 5;
+}
+.commonImgcap.left {
+  left: 0;
+  right: auto;
+}
+
+
+/* commonEndCaptions
+------------------------------*/
+.commonEndCaptions {
+  max-width: 1352px;
+  margin: 90px auto;
+  padding: 0 20px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+@media screen and (max-width:768px) {
+  .commonEndCaptions {
+    margin: 40px auto;
+  }
+}
+
+
+
+
+/* spCommonModal
+------------------------------*/
+@media only screen and (min-width:769px) {
+  #spCommonModalArea {
+    display: none !important;
+  }
+}
+@media only screen and (max-width:768px) {
+  .commonSpModalImage {
+    position: relative;
+    cursor: pointer;
+  }
+  .commonSpModalImage:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url(../images/ico_sp_modal.svg) no-repeat center center / contain;
+  }
+  #spCommonModalArea {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    -webkit-overflow-scrolling: touch;
+    z-index: 9999999;
+  }
+  #spCommonModalTable {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 60px 0;
+  }
+  #spCommonModalCell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  #spCommonModalInner {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #spCommonModalInner img {
+    max-width: 100%;
+    height: auto;
+  }
+  #spCommonModalContents {
+    position: relative;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #spCommonModalContents:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    content: '';
+    width: 70px;
+    height: 70px;
+    background: url(../images/swipe_icon.svg) no-repeat center center / contain;
+    transform: translateY(-50%);
+    transition: opacity 0.3s;
+    animation: return 3s 0s infinite ease;
+    z-index: 2;
+  }
+  @keyframes return {
+    50% {
+      margin-left: -70px;
+    }
+    100% {
+      margin-left: 0;
+    }
+  }
+  #spCommonModalContents.icoOff:before {
+    opacity: 0;
+  }
+  #spCommonModalContents figure {
+    box-sizing: border-box;
+    width: 200%;
+    padding: 0 20px;
+  }
+  #spCommonModalContents figure img {
+    width: 100%;
+  }
+  #spCommonModalClose {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  #spCommonModalClose:before,
+  #spCommonModalClose:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    content: '';
+    width: 40px;
+    height: 2px;
+    margin-left: -20px;
+    background-color: #fff;
+  }
+  #spCommonModalClose:before {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+  }
+  #spCommonModalClose:after {
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+  }
+}
+
+
+
+
+
+
+@media only screen and (min-width:769px) {
+  .commonPcModalImage {
+    position: relative;
+    cursor: pointer;
+  }
+  /*.commonPcModalImage:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url(../images/ico_sp_modal.svg) no-repeat center center / contain;
+  }*/
+  #pcCommonModalArea {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    -webkit-overflow-scrolling: touch;
+    z-index: 9999999;
+  }
+  #pcCommonModalTable {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 60px 0;
+  }
+  #pcCommonModalCell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  #pcCommonModalInner {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #pcCommonModalInner img {
+    max-width: 100%;
+    height: auto;
+  }
+  #pcCommonModalContents {
+    position: relative;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  /*#pcCommonModalContents:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    content: '';
+    width: 70px;
+    height: 70px;
+    background: url(../images/swipe_icon.svg) no-repeat center center / contain;
+    transform: translateY(-50%);
+    transition: opacity 0.3s;
+    animation: return 3s 0s infinite ease;
+    z-index: 2;
+  }*/
+  /*@keyframes return {
+    50% {
+      margin-left: -70px;
+    }
+    100% {
+      margin-left: 0;
+    }
+  }*/
+  #pcCommonModalContents.icoOff:before {
+    opacity: 0;
+  }
+  #pcCommonModalContents figure {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 20px;
+  }
+  #pcCommonModalContents figure img {
+    width: 100%;
+  }
+  #pcCommonModalClose {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  #pcCommonModalClose:before,
+  #pcCommonModalClose:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    content: '';
+    width: 40px;
+    height: 2px;
+    margin-left: -20px;
+    background-color: #fff;
+  }
+  #pcCommonModalClose:before {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+  }
+  #pcCommonModalClose:after {
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+  }
+}
+

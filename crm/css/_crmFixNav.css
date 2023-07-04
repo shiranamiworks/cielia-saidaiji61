@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/* ============================================================ 
+ver.2020.04.01
+
+//フッター固定ナビ
+480px以下で表示
+=============================================================== */
+
+
+
+/*---------------------------------------------------------------
+
+ crm--sideFixNav
+
+--------------------------------------------------------------- */
+.crm--sideFixNav {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 9999999999999;
+}
+.crm--sideFixNav a {
+  box-sizing: border-box;
+  position: relative;
+  display: table;
+  width: 180px;
+  height: 70px;
+  padding-left: 60px;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+.crm--sideFixNav a span {
+  display: table-cell;
+  vertical-align: middle;
+}
+.crm--sideFixNav a small {
+  font-size: 12px;
+}
+.crm--sideFixNav a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: '';
+  width: 52px;
+  height: 100%;
+  background: no-repeat center center;
+}
+.crm--sideFixNav .reserve01 a,
+.crm--sideFixNav .reserve02 a {
+  /* background-color: rgba(0,60,122,0.9); */
+  background-color: rgba(0,30,120,0.9);
+}
+.crm--sideFixNav .request01 a,
+.crm--sideFixNav .request02 a {
+  /* color: #003c7a; */
+  /* background-color: rgba(255,255,255,0.9); */
+  color: #fff;
+  background-color: rgba(0,60,122,0.9);
+}
+.crm--sideFixNav .position a {
+  background-color: rgba(59,59,65,0.9);
+}
+.crm--sideFixNav .official a {
+  background-color: rgba(59,59,65,0.9);
+}
+
+.crm--sideFixNav .reserve01 a:before {
+  background-image: url(../images/ico_reserve.png);
+  background-size: 20px auto;
+}
+.crm--sideFixNav .reserve02 a:before {
+  background-image: url(../images/ico_reserve02.png);
+  background-size: 25px auto;
+}
+.crm--sideFixNav .request01 a:before {
+  /* background-image: url(../images/ico_request_blue.png); */
+  background-image: url(../images/ico_request.png);
+  background-size: 20px auto;
+}
+.crm--sideFixNav .request02 a:before {
+  /* background-image: url(../images/ico_request02_blue.png); */
+  background-image: url(../images/ico_request02.png);
+  background-size: 25px auto;
+}
+.crm--sideFixNav .position a:before {
+  background-image: url(../images/ico_map.png);
+  background-size: 16px auto;
+}
+.crm--sideFixNav .official a:before {
+  background-image: url(../images/ico_official.png);
+  background-size: 18px auto;
+}
+@media screen and (max-width:1280px) {
+  .crm--sideFixNav {
+    display: none;
+  }
+}
+
+
+
+
+/*---------------------------------------------------------------
+
+ crm--footFixNav
+
+--------------------------------------------------------------- */
+.crm--footFixNav{
+  display: none;
+}
+
+@media screen and (max-width:480px) {
+  .crm--footFixNav {
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    font-size: 10px;
+    z-index: 9999;
+    letter-spacing: 0;
+    background: #000;
+  }
+  .crm--footFixNav ul {
+    display: flex;
+    align-items: center;
+    border-top:1px solid #252e73;
+  }
+  .crm--footFixNav li {
+    width: 100%;
+    text-align: center;
+  }
+  .crm--footFixNav li + li {
+    margin-left: 1px;
+  }
+  .crm--footFixNav li a {
+    display: block;
+    height: 70px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #3b3b41;
+  }
+  .crm--footFixNav li a:before {
+    display: block;
+    width: 100%;
+    height: 48px;
+    content: '';
+    background: no-repeat center center;
+  }
+  .crm--footFixNav li.contact a:before {
+    background-image: url(../images/ico_tel.png);
+    background-size: 18px auto;
+  }
+  .crm--footFixNav li.outline a:before {
+    background-image: url(../images/ico_outline.png);
+    background-size: 18px auto;
+  }
+  .crm--footFixNav li.map a:before {
+    background-image: url(../images/ico_map.png);
+    background-size: 18px auto;
+  }
+  .crm--footFixNav li.request a:before {
+    background-image: url(../images/ico_request.png);
+    background-size: 18px auto;
+  }
+  .crm--footFixNav li.reserve a:before {
+    background-image: url(../images/ico_reserve.png);
+    background-size: 18px auto;
+  }
+}
+
