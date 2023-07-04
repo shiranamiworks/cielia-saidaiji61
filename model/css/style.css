@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+@media only screen and (max-width:1280px) {}
+@media only screen and (max-width:768px) {}
+@media only screen and (max-width:480px) {}
+
+small {
+	font-size: 12px;
+}
+
+figcaption.black {
+	position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  color: #000;
+  font-size: 10px;
+  line-height: 1;
+  text-align: left;
+  text-shadow:none;
+  z-index: 5;
+}
+
+/*---------------------------------------------------------------
+
+ commonKeyvisual
+
+--------------------------------------------------------------- */
+.commonKeyvisual .imagearea {
+  background: url(../images/kv.jpg) no-repeat left center / cover;
+}
+
+
+
+/*---------------------------------------------------------------
+
+ modalSlideAera
+
+--------------------------------------------------------------- */
+.commonSection .modalSlideAera {
+	position: relative;
+}
+.commonSection .thumbnails ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+.commonSection .thumbnails li {
+	width: calc(25% - 2px);
+	margin: 2px 1px 0;
+	background-color: #000;
+	cursor: pointer;
+}
+.commonSection .thumbnails li img {
+	transition: opacity 0.3s;
+	opacity: 0.4;
+}
+.commonSection .thumbnails li.slick-active img,
+.commonSection .thumbnails li:hover img {
+	opacity: 1;
+}
+.commonSection .modalSlideAera .slick-arrow {
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	width: 40px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	transform: translateY(-50%);
+	background-color: rgba(59,59,65,0.9);
+	cursor: pointer;
+	text-indent: -9999px;
+	z-index: 5;
+}
+.commonSection .modalSlideAera .slick-arrow:before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	content: '';
+	width: 10px;
+	height: 10px;
+	transform: rotate(45deg);
+	margin-top: -5px;
+}
+.commonSection .modalSlideAera .slick-prev {
+	left: 0;
+}
+.commonSection .modalSlideAera .slick-next {
+	right: 0;
+}
+
+.commonSection .modalSlideAera .slick-prev:before {
+	margin-left: -2px;
+	border-left: #fff solid 1px;
+	border-bottom: #fff solid 1px;
+}
+.commonSection .modalSlideAera .slick-next:before {
+	margin-left: -8px;
+	border-right: #fff solid 1px;
+	border-top: #fff solid 1px;
+}
+@media only screen and (max-width:768px) {
+	.commonSection .modalSlideAera,
+	.commonSection .thumbnails {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.commonSection .modalSlideAera .slick-arrow {
+		width: 20px;
+		height: 80px;
+	}
+}
+
+
+
+
+.equipmentList {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -70px -15px 0;
+}
+.equipmentList > li {
+	box-sizing: border-box;
+	width: 25%;
+	padding: 70px 15px 0;
+}
+.equipmentList > li figure {
+	position: relative;
+	margin-bottom: 15px;
+}
+.equipmentList > li figure img {
+	width: 100%;
+}
+.equipmentList > li .ttl {
+	margin-bottom: 10px;
+	color: #807650;
+	font-size: 18px;
+	line-height: 1.4;
+}
+.equipmentList > li .ttl small {
+	font-size: 0.7em;
+}
+
+.ecoH{
+	display: flex;
+	justify-content: space-between;
+}
+.-left{
+	width: 65%;
+}
+.-right{
+	width: 32%;
+}
+
+
+@media only screen and (max-width:768px) {
+	.equipmentList {
+		margin: -50px -10px 0;
+	}
+	.equipmentList > li {
+		width: 50%;
+		padding: 50px 10px 0;
+		font-size: 12px;
+	}
+	.equipmentList > li .ttl {
+		font-size: 14px;
+	}
+	.ecoH{
+		display: block;
+	}
+	.-left{
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	.-right{
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+
+@media only screen and (max-width:500px) {
+	.equipmentList {
+		margin: 0;
+	}
+	.equipmentList > li {
+		width: auto;
+		padding: 0;
+	}
+	.equipmentList > li + li {
+		margin-top: 40px;
+	}
+
+}

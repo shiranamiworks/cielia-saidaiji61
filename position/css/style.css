@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+@media only screen and (max-width:1280px) {}
+@media only screen and (max-width:768px) {}
+@media only screen and (max-width:480px) {}
+
+/*---------------------------------------------------------------
+
+ commonKeyvisual
+
+--------------------------------------------------------------- */
+.commonKeyvisual .imagearea {
+  background-image: url(../images/kv.jpg);
+}
+
+
+
+/*---------------------------------------------------------------
+
+ mapBtn
+
+--------------------------------------------------------------- */
+.mapBtn {
+  margin-top: 40px;
+}
+.mapBtn a {
+  display: block;
+  max-width: 380px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 16px;
+  background-color: #2b2a65;
+  text-align: center;
+  text-decoration: none;
+}
+.mapBtn a span {
+  position: relative;
+  display: inline-block;
+  padding: 20px 0 20px 45px;
+}
+.mapBtn.red a {
+  background-color: #652a2a;
+} 
+.mapBtn a span:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  content: '';
+  width: 25px;
+  height: 36px;
+  background: url(../images/ico.png) no-repeat center center / contain;
+  transform: translateY(-50%);
+}
+@media only screen and (max-width:768px) {
+  .mapBtn {
+     margin-top: 25px;
+  }
+  .mapBtn a {
+    font-size: 14px;
+  }
+  .mapBtn a span {
+    padding-left: 30px;
+  }
+  .mapBtn a span:before {
+    width: 20px;
+    height: 31px;
+  }
+}
+
+
+/* guideMapStyle
+------------------------------*/
+.guideMapStyle {
+  display: flex;
+  background: #0f0163;
+  color: #fff;
+}
+.guideMapStyle .map {
+  width: 59.1716%;
+}
+.guideMapStyle .texts {
+  box-sizing: border-box;
+  width: 40.8284%;
+  padding: 40px 30px;
+}
+.guideMapStyle .texts .box + .box {
+  margin-top: 50px;
+}
+.guideMapStyle .texts .ttl {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  border-bottom: #fff solid 1px;
+}
+@media only screen and (max-width:1280px) {
+  .guideMapStyle .texts {
+    padding: 30px 20px;
+  }
+  .guideMapStyle .texts .box + .box {
+    margin-top: 30px;
+  }
+  .guideMapStyle .texts .box {
+    font-size: 12px;
+  }
+  .guideMapStyle .texts .ttl {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width:768px) {
+  .guideMapStyle {
+    display: block;
+  }
+  .guideMapStyle .map {
+    width: auto;
+  }
+  .guideMapStyle .map img {
+    width: 100%;
+  }
+  .guideMapStyle .texts {
+    width: auto;
+  }
+  .guideMapStyle .texts .ttl {
+    font-size: 14px;
+  }
+}

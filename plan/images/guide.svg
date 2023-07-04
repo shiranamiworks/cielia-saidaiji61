@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="レイヤー_36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 369.4 12.5" style="enable-background:new 0 0 369.4 12.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:url(#SVGID_3_);}
+	.st1{fill:#040000;}
+	.st2{font-family:'A1MinchoStd-Bold-90ms-RKSJ-H';}
+	.st3{font-size:12px;}
+	.st4{clip-path:url(#SVGID_5_);fill:url(#SVGID_6_);}
+	.st5{fill:#C9D9E0;}
+	.st6{letter-spacing:-2;}
+	.st7{fill:#D7CEBD;}
+</style>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M0,6c6.6,1.2,37.6,1.8,42.6,4l-2.4-3.9l2.4-4.2C37.6,4.2,6.6,4.7,0,6"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	
+		<radialGradient id="SVGID_3_" cx="-1031.8922" cy="5943.6558" r="1" gradientTransform="matrix(0 -15.3486 15.3486 0 -91205.3438 -15832.0938)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#C4DCED"/>
+		<stop  offset="0.7268" style="stop-color:#A1C5CE"/>
+		<stop  offset="1" style="stop-color:#92BBC1"/>
+	</radialGradient>
+	<rect y="1.9" class="st0" width="42.6" height="8.1"/>
+</g>
+<text transform="matrix(1 0 0 1 49.5017 10.5667)" class="st1 st2 st3">通風</text>
+<g>
+	<defs>
+		<path id="SVGID_4_" d="M86.1,6L86.1,6c6.6,1.2,37.6,1.8,42.6,4l-2.4-3.9l2.4-4.2C123.8,4.2,92.7,4.7,86.1,6"/>
+	</defs>
+	<clipPath id="SVGID_5_">
+		<use xlink:href="#SVGID_4_"  style="overflow:visible;"/>
+	</clipPath>
+	
+		<radialGradient id="SVGID_6_" cx="-1031.8922" cy="5943.6558" r="1" gradientTransform="matrix(0 -15.3486 15.3486 0 -91119.1953 -15832.0938)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#F2EFB8"/>
+		<stop  offset="0.7618" style="stop-color:#E5D18D"/>
+		<stop  offset="1" style="stop-color:#E0C77F"/>
+	</radialGradient>
+	<rect x="86.1" y="1.9" class="st4" width="42.6" height="8.1"/>
+</g>
+<text transform="matrix(1 0 0 1 135.448 10.5667)" class="st1 st2 st3">採光</text>
+<g>
+	<rect x="180.3" class="st5" width="45.5" height="12"/>
+</g>
+<text transform="matrix(1 0 0 1 233.0262 10.5667)"><tspan x="0" y="0" class="st1 st2 st3">水</tspan><tspan x="12" y="0" class="st1 st2 st3 st6">廻</tspan><tspan x="21.3" y="0" class="st1 st2 st3">り</tspan></text>
+<g>
+	<rect x="291.6" class="st7" width="45.5" height="12"/>
+</g>
+<text transform="matrix(1 0 0 1 345.3611 10.5667)" class="st1 st2 st3">収納</text>
+</svg>
