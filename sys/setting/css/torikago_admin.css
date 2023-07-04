@@ -1,0 +1,158 @@
+#torikagoContainer {
+  letter-spacing: 0.05em;
+  font-family: "リュウミン R-KL", Ryumin Regular KL, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  color: #212733;
+  font-feature-settings: "palt";
+}
+#torikago {
+
+  width:94%;
+  text-align:center;
+  border:0;
+  margin:0 auto 60px;
+}
+#torikago td {
+  width:6.25%;
+  background:#E2E4EB;
+  border:1px solid #FFF;
+  line-height:1.4rem;
+  box-sizing:border-box;
+}
+#torikago td.nolink {
+  padding:10px 0;
+}
+#torikago td a {
+  display:block;
+  width:100%;
+  height:100%;
+  color:#FFF;
+  padding:10px 0;
+  box-sizing:border-box;
+  background:#3A4B7B;
+}
+#torikago td.floor {
+  width:9%;
+  border:none;
+  border-bottom:1px solid #999;
+  padding:1% 5px 0;
+  box-sizing:border-box;
+}
+#torikago td.blank {
+  width:1%;
+  background:none;
+}
+#torikago td.public {
+  font-size:1.0rem;
+}
+#torikago td .price {
+  padding-top:2%;
+  font-size:1.2rem;
+}
+#toriSpec {
+  display:none;
+  font-size:1.4rem;
+} 
+#toriSpec td {
+  padding-top:0;
+} 
+#toriSpec span {
+  font-size:0.8rem;
+}
+#torikago td.keiyaku {
+  height:100%;
+  color:#666;
+  padding:10px 0;
+  background:#E2E4EB;
+  box-sizing:border-box;
+}
+#torikago td.jiki a {
+  height:100%;
+  color:#666;
+  background:#E2E4EB;
+  box-sizing:border-box;
+}
+@media screen and (max-width:1400px) {
+  #torikago {
+    width:120%;
+  }
+}
+@media screen and (max-width:960px) {
+  #torikago {
+    width:200%;
+    text-align:center;
+    border:0;
+    margin:0 auto 0px;
+    font-size:1.2rem;
+  }
+  #torikago td {
+    line-height:1.2rem;
+    box-sizing:border-box;
+  }
+  #torikago td.nolink {
+    padding:5px 0;
+  }
+  #torikago td a {
+    width:100%;
+    height:100%;
+    padding:5px 0;
+  }
+  #torikago td.floor {
+    width:5%;
+  }
+  #torikago td.blank {
+  }
+  #torikago td.public {
+    font-size:1.0rem;
+  }
+  #toriSpec {
+    font-size:1.3rem;
+  } 
+  #toriSpec td {
+    padding-top:0;
+  } 
+  #toriSpec span {
+    color:#555;
+    font-size:0.6rem;
+    letter-spacing:0;
+  }
+  #torikago td.keiyaku {
+    padding:5px 0;
+  }
+}
+
+
+
+#torikago td.edit {
+  padding:0;
+  vertical-align: middle;
+}
+#torikago td p {
+  margin: 0 0 5px;
+}
+#torikago td.edit a {
+  display: block;
+  background:none;
+  text-decoration: none;
+  color:#333;
+  background-color:#EEE;
+}
+#torikago td a:hover,
+#torikago td a:active {
+  filter:alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  text-decoration: none;
+}
+#torikago td.keiyaku a {
+  background:#E2E4EB !important;
+}
+#torikago td.jiki a {
+  background:#E2E4EB !important;
+}
+#torikago td.nolink.public a {
+  background:#E2E4EB !important;
+}
+
+.tooltip > * {
+  text-align: left !important;
+}
