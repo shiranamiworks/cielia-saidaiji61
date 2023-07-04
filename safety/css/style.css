@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+@media only screen and (max-width:1280px) {}
+@media only screen and (max-width:768px) {}
+@media only screen and (max-width:480px) {}
+
+sup {
+	font-size: 10px;
+	vertical-align: top;
+}
+
+/*---------------------------------------------------------------
+
+ commonKeyvisual
+
+--------------------------------------------------------------- */
+.commonKeyvisual .imagearea {
+	background-image: url(../images/kv.jpg);
+}
+@media only screen and (max-width:768px) {
+	.commonKeyvisual .textArea {
+		color: #000;
+		background-color: #FFF;
+	}
+}
+
+/* commonSpModalImage */
+.commonSection .commonSpModalImage + .commonSpModalImage {
+	margin-top: 40px;
+}
+.commonSection .commonBigTitle01.min {
+	font-size: 24px;
+}
+@media only screen and (max-width:768px) {
+	.commonSection .commonBigTitle01.min {
+		font-size: 18px;
+	}
+}
+
+.ac {
+	text-align: center;
+}
+
+/* supportWrap */
+.supportWrap {
+	max-width: 1352px;
+	margin: 0 auto;
+	padding: 60px 20px;
+	background: #ffffff;
+	text-align: center;
+}
+
+/* supportList */
+.supportList {
+	max-width: 1352px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.supportList li {
+	width: 48.8888%;
+}
+.supportList li:not(:nth-of-type(2n)) {
+	margin-right: 2.2223%;
+}
+.supportList li .supporTtl,
+.supportList li .supporTtl + figure {
+	margin-bottom: 30px;
+}
+.supportList li:not(:nth-of-type(2n)) {
+	margin-right: 2.2223%;
+}
+.supportList li:last-of-type {
+	padding-top: 60px;
+}
+@media only screen and (max-width:768px) {
+	.supportList {
+		display: block;
+	}
+	.supportList li {
+		width: 100%;
+	}
+	.supportList li:not(:nth-of-type(2n)) {
+		margin-right: 0;
+	}
+	.supportList li:nth-of-type(n + 2) {
+		margin-top: 40px;
+	}
+	.supportList li:last-of-type {
+		padding-top: 0;
+	}
+}

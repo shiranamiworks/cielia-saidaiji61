@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- data_layer -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'item_pagetype': '',
+    'item_category': 'new',
+  });
+</script>
+<!-- End data_layer -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WMCBSV');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+
+<title>かんたんローン計算</title>
+<meta name="keywords" content="シエリア,新築,分譲,マンション,ローン,シミュレーター,シミュレーション" />
+<meta name="description" content="購入に必要な資金をシミュレーションすることができます" />
+
+<meta name="description" content="かんたんローン計算">
+<meta name="keywords" content="シエリア,新築,分譲,マンション,ローン,シミュレーター,シミュレーション">
+<meta property="og:type" content="website">
+<meta property="og:title" content="かんたんローン計算">
+<meta property="og:url" content="https://www.cielia.com/m/saidaiji61/simulator/">
+
+<link rel="stylesheet" href="assets/js/rangeslider/rangeslider.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<!-- TAG START -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMCBSV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="main">
+
+  <div class="head-content">
+
+    <header class="header">
+      <div class="header-logo">
+      <h1><img src="assets/images/img_logotxt.png" width="170" height="19" alt="かんたんローン計算"></h1>
+      </div>
+      <div class="input-info">
+        <p>各項目からご希望の金額を入力いだたき、<br>「計算」ボタンをクリックしてください。</p>
+      </div>
+    </header>
+
+
+    <div class="result-area">
+
+      <div class="result-area-wrap"><div class="result-area-bg">
+        <div class="result-area-inner">
+
+          <div class="result-price result-price__sales">
+            <div class="price-data">
+              <h3 class="price-ttl"><!--販売価格--></h3>
+              <dl class="price-value">
+                <dt>　</dt>
+                <dd>万円</dd>
+              </dl>
+            </div>
+          </div>
+
+
+          <div class="result-price result-price__loan">
+            <div class="price-data">
+              <h3 class="price-ttl">借入金額</h3>
+              <dl class="price-value">
+                <dt>　</dt>
+                <dd>万円</dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="result-price result-price__ratio">
+            <div class="price-data">
+              <h3 class="price-ttl">返済比率</h3>
+              <dl class="price-value">
+                <dt>　</dt>
+                <dd>％</dd>
+              </dl>
+            </div>
+          </div>
+
+        </div>
+      </div></div>
+
+    <!-- //.result-area --></div>
+
+  <!-- //.head-content --></div>
+
+<div class="container" id="Container">
+
+  <div class="g-wrap">
+
+  <div class="content" id="Content">
+
+    <form action="" method="get">
+  
+    <!--<div class="input-info">
+      <p>各項目からご希望の金額を入力いだたき、<br>「計算」ボタンをクリックしてください。</p>
+    </div>-->
+
+    <div class="input-area" id="inputArea">
+
+      <div class="input-area-inner">
+
+        <div class="form-group form-group__tsuki">
+          <div class="form-inline input-item">
+            <div class="input-item__ttl">
+              <h4>月々の支払額</h4>
+              <div class="input-item__form">
+                <input type="number" step="0.1" data-min="0" data-max="100" data-decimel="1" tabindex="-1" data-inital="0" name="tsuki" class="form-control form-input input-tsuki" placeholder="">
+                <label class="input-unit">万円</label>
+              </div>
+            </div>
+            <div class="input-item__exp">
+              <span>※小数第1までご入力ください。最大100万円まで</span>
+            </div>
+            <div class="input-item__pbar"><div class="pbar-inner"><span>
+              <input type="range" class="input-range range-tsuki" data-output-target="tsuki" data-rangeslider tabindex="-1">
+            </span></div></div>
+          <!-- //.input-item --></div>
+
+        <!-- //.form-group --></div>
+
+
+        <div class="form-group form-group__bounas">
+          <div class="form-inline input-item">
+            <div class="input-item__ttl">
+              <h4>ボーナス支払</h4>
+              <div class="input-item__form">
+                <input type="number" step="1" data-min="0" data-max="100" data-inital="0" tabindex="-1" name="bounas" class="form-control form-input input-bounas" placeholder="">
+                <label class="input-unit">万円／回</label>
+              </div>
+            </div>
+            <div class="input-item__exp">
+              <span>※整数でご入力ください。最大100万円まで</span>
+            </div>
+            <div class="input-item__pbar"><div class="pbar-inner"><span>
+              <input type="range" class="input-range range-bounas" data-output-target="bounas" data-rangeslider tabindex="-1">
+            </span></div></div>
+          <!-- //.input-item --></div>
+
+        <!-- //.form-group --></div>
+
+
+        <div class="form-group form-group__nensyu">
+          <div class="form-inline input-item">
+            <div class="input-item__ttl">
+              <h4>世帯年収</h4>
+              <div class="input-item__form">
+                <input type="tel" step="10" data-min="0" data-max="2000" data-inital="400" tabindex="-1" name="nensyu" class="form-control form-input input-nensyu" placeholder="">
+                <label class="input-unit">万円</label>
+              </div>
+            </div>
+            <div class="input-item__exp">
+              <span>※整数でご入力ください。最大2000万円まで</span>
+            </div>
+            <div class="input-item__pbar"><div class="pbar-inner"><span>
+              <input type="range" class="input-range range-nensyu" data-output-target="nensyu" data-rangeslider tabindex="-1">
+            </span></div></div>
+          <!-- //.input-item --></div>
+
+        <!-- //.form-group --></div>
+
+
+        <div class="form-group form-group__atama">
+          <div class="form-inline input-item">
+            <div class="input-item__ttl">
+              <h4>自己資金(頭金)</h4>
+              <div class="input-item__form">
+                <input type="tel" step="10" data-min="0" data-max="10000" data-inital="300" tabindex="-1" name="atama" class="form-control form-input input-atama" placeholder="">
+                <label class="input-unit">万円</label>
+              </div>
+            </div>
+            <div class="input-item__exp">
+              <span>※整数でご入力ください。最大10000万円まで</span>
+            </div>
+            <div class="input-item__pbar"><div class="pbar-inner"><span>
+              <input type="range" class="input-range range-atama" data-output-target="atama" data-rangeslider tabindex="-1">
+            </span></div></div>
+          <!-- //.input-item --></div>
+
+        <!-- //.form-group --></div>
+
+
+        <div class="form-group form-group__kinri">
+          <div class="form-inline input-item">
+            <div class="input-item__ttl">
+              <h4>金利</h4>
+              <div class="input-item__form">
+                <input type="number" step="0.001" data-min="0.1" data-max="2.0" data-decimel="3" data-inital="1.0" tabindex="-1" name="kinri" class="form-control form-input input-kinri" placeholder="">
+                <label class="input-unit">％</label>
+              </div>
+            </div>
+            <div class="input-item__exp">
+              <span>スライダーが使いにくい場合は、直接ご入力ください<br>（小数第３位まで、最大２％まで）</span>
+            </div>
+            <div class="input-item__pbar"><div class="pbar-inner"><span>
+              <input type="range" class="input-range range-kinri" data-output-target="kinri" data-rangeslider tabindex="-1">
+            </span></div></div>
+          <!-- //.input-item --></div>
+
+        <!-- //.form-group --></div>
+
+
+
+        <div class="form-group form-group__kikan">
+          <div class="form-inline input-item">
+            <div class="input-item__ttl">
+              <h4>返済期間</h4>
+              <div class="input-item__form">
+                <input type="number" step="1" data-min="1" data-max="35" data-inital="35" name="kikan" tabindex="-1" class="form-control form-input input-kikan" placeholder="">
+                <label class="input-unit">年</label>
+              </div>
+            </div>
+            <div class="input-item__exp">
+              <span>※整数でご入力ください。最大35年まで</span>
+            </div>
+            <div class="input-item__pbar"><div class="pbar-inner"><span>
+              <input type="range" class="input-range range-kikan" data-output-target="kikan" data-rangeslider tabindex="-1">
+            </span></div></div>
+          <!-- //.input-item --></div>
+
+        <!-- //.form-group --></div>
+
+      <!-- //.input-area-inner --></div>
+
+      <div class="input-area-bottom">
+
+        <div class="buttons">
+          <button class="btn-submit" id="btnSubmit" type="button">上記内容で計算する</button>
+        </div>
+
+      <!-- //.input-area-bottom --></div>
+
+
+    <!-- //.input-area --></div>
+
+
+    <input type="hidden" name="send" value="1">
+    </form>
+
+  <!-- //.content--></div>
+
+
+
+  <div class="foot-content">
+
+    <div class="foot-btmimg"></div>
+
+    <footer class="footer" id="Footer">
+
+      <div class="footer_container">
+
+      <ul class="attention">
+        <li>※シミュレーションでの結果は、あくまでも目安で、概算になります。実際にローン契約をする際は、詳細を金融機関にご確認ください。</li>
+        <li>※実際のローン契約時には諸費用・税金（手数料や印紙税、保証料など）が別途かかりますので、契約の際にご確認ください。</li>
+        <li>※シミュレーションを利用し、それが原因で利用者が受けたいかなる損害についても当社は一切責任を負いません。あらかじめご了承ください。<br>
+        月々返済できる金額から、いくらまで借入可能かを元利均等方式で計算します。</li>
+        <li>※半角数字でご入力ください。</li>
+      </ul>
+
+      <p class="footer_copyright"><small>Copyright(c) kanden Realty&amp;Development Co.,ltd. All Rights Reserved.</small></p>
+
+      <!-- //.footer-container --></div>
+    </footer>
+
+  <!-- //.foot-content --></div>
+
+  <!-- //.g-wrap --></div>
+
+
+
+<!-- //.container--></div>
+
+  <div class="g-submit-btn"><div class="g-submit-inner">
+    <div class="buttons">
+      <button class="btn-submit" id="btnGbSubmit" type="button">上記内容で計算する</button>
+    </div>
+  </div></div>
+</div>
+
+<script src="assets/js/jquery-3.1.1.min.js"></script>
+<script src="assets/js/jquery.cookie.js"></script>
+<script src="assets/js/css_browser_selector.js"></script>
+<script src="assets/js/rangeslider/rangeslider.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/calc.js"></script>
+<script>
+$(function(){
+  var app = new $.app();
+  app.init();
+});
+</script>
+
+<!-- Yahoo Tag Manager -->
+<script id="tagjs" type="text/javascript">
+(function () {
+var tagjs = document.createElement("script");
+var s = document.getElementsByTagName("script")[0];
+tagjs.async = true;
+tagjs.src = "//s.yjtag.jp/tag.js#site=h8ocGPj";
+s.parentNode.insertBefore(tagjs, s);
+}());
+</script>
+<noscript>
+<iframe src="//b.yjtag.jp/iframe?c=h8ocGPj" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
+<!-- End Yahoo Tag Manager -->
+</body>
+</html>
