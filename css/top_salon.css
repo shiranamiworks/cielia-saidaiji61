@@ -1,0 +1,451 @@
+/* =========================================================
+  slonWrap
+========================================================== */
+#slonWrap {
+  padding: 100px 0;
+  text-align: center;
+  color: #FFF;
+  background-color: #373430;
+}
+#slonWrap .texts {
+  max-width: 1352px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
+}
+#slonWrap .commonBdrTitle01:before {
+  background-color: #fff;
+}
+#slonWrap .texts .cap {
+  margin-top: 10px;
+  font-size: 12px;
+}
+#slonWrap a {
+  text-decoration: none;
+}
+#slonWrap .titleSS.first {
+  margin-top: 52px;
+}
+#slonWrap ul#tokuten {
+  max-width: 1352px;
+  margin: 48px auto;
+  overflow: hidden;
+}
+#slonWrap ul#tokuten li {
+  float: left;
+  width: 30%;
+  box-sizing: border-box;
+}
+#slonWrap ul#tokuten li:nth-of-type(2) {
+  margin: 0 5%;
+}
+#slonWrap #loginWrap {
+  margin-top: 64px;
+}
+@media screen and (max-width:768px) {
+  #slonWrap {
+    padding: 50px 0;
+  }
+  #slonWrap .texts .lead {
+    font-size: 14px;
+  }
+  #slonWrap ul#tokuten li {
+    width: 33%;
+  }
+  #slonWrap ul#tokuten li:nth-of-type(2) {
+    margin: 0 0.5%;
+  }
+}
+@media screen and (max-width:468px) {
+  #slonWrap ul#tokuten li,
+  #slonWrap ul#tokuten li:nth-of-type(2){
+    float: none;
+    width: 80%;
+    margin: 0 auto 40px;
+  }
+}
+
+/* =========================================================
+  salon
+========================================================== */
+#salon {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  color: #FFF;
+}
+#salon .copy {
+  text-align: center;
+  line-height: 2.6rem;
+}
+#salon .captionC {
+  margin-top:10px;
+  text-align: center;
+  line-height: 1.6rem;
+}
+#salon #salonWrap {
+  width: 90%;
+  max-width: 1352px;
+  margin:30px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+#salon #salonWrap li {
+  width: 32%;
+  padding: 30px 30px;
+  background: rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+#salon #salonWrap li:nth-of-type(2) {
+  margin: 0 2%;
+}
+#salon #salonWrap li p.bnr {
+    width: 100%;
+    border: 0;
+    border-style: none;
+    box-sizing: border-box;
+}
+#salon #salonWrap li p.bnr a {
+    color: #FFFFFF;
+    line-height: 40px;
+    background: #9B9B8C;
+    display: block;
+    transition: 0.5s;
+}
+#salon #salonWrap li p.bnr a:hover {
+  opacity: 0.7;
+}
+#salon #salonWrap p.name {
+  font-size: 1.8rem;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+  padding-bottom: 16px;
+}
+#salon #salonWrap p.name span {
+  font-size: 1.2rem;
+  color: #333;
+  letter-spacing: 0.3em;
+}
+#salon #salonWrap .soon {
+  text-align: left;
+  font-size: 1.5rem;
+  padding-top: 15px;
+  border-top: 1px solid #CCC;
+}
+#salon #salonWrap p.info {
+  margin-top:15px;
+  color: #A57D58;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width:1240px) {}
+
+@media screen and (max-width:960px) {
+  /*#salon {
+    background: url(../img/salon_bg_sp.jpg) center top no-repeat;
+  }*/
+
+  #salon p.intro {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  #salon p.caption {
+    font-size: 1.2rem;
+  }
+
+  #salon p.captionL {
+    text-align: center;
+  }
+
+  #salon #salonWrap {
+    max-width: initial;
+    width: 90%;
+    flex-wrap: wrap;
+  }
+
+  #salon #salonWrap li {
+    float: none;
+    width: 100%;
+    padding: 6% 8%;
+    margin-bottom: 8%;
+  }
+
+  #salon #salonWrap li:nth-of-type(2) {
+    margin: 0 auto 8%;
+  }
+  #salon #salonWrap .soon {
+    margin-top: 0px;
+    font-size: 1.8rem;
+  }
+  #salon #salonWrap li p.bnr {
+    width: 100%;
+    height: 41px;
+    line-height: 41px;
+  }
+  #salon #salonWrap p.info {
+    width: 100%;
+    padding: 0 0 3%;
+    font-size: 1.2rem;
+    letter-spacing: 0em;
+  }
+  #salon a {
+    display: block;
+    width: 100%;
+    height: 41px;
+    color: #E9535C;
+    border: 0;
+    border-style: none;
+    background-color: #F8F6E7;
+    border-radius: 2px;
+    /* CSS3闕画｡� */
+    -webkit-border-radius: 2px;
+    /* Safari,Google Chrome逕ｨ */
+    -moz-border-radius: 2px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width:768px) {
+  #salon #salonWrap .soon {
+    font-size: 3.6vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:468px) {}
+
+/* =========================================================
+  login
+========================================================== */
+#member #loginWrap {
+  max-width: 800px;
+  padding: 50px;
+  margin: 55px auto 0;
+  border: 1px solid #CCC;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  box-sizing: border-box;
+}
+
+
+.passWrap {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.passWrap p {
+  font-size: 1.2rem !important;
+}
+
+.passWrap p:first-of-type {
+  width: 62%;
+}
+
+.passWrap p:first-of-type input {
+  width: 100%;
+  height: 34px;
+  padding-left:5px;
+}
+
+.passWrap p:last-of-type {
+  width: 32%;
+  height: 26px;
+  font-size: 1.4rem;
+  border: 0;
+  border-style: none;
+}
+
+div.passWrap p:last-of-type input {
+  width: 100%;
+  height: 40px;
+  color: #E9535C;
+  border: 0;
+  border-style: none;
+  transition: 0.5s;
+  background: #e8e4c3;
+  box-sizing: border-box;
+}
+
+div.passWrap p:last-of-type input:hover {
+  background: #F8F6E7;
+  opacity: 0.7;
+}
+
+input::-ms-clear {
+  visibility: hidden;
+}
+
+input::-ms-reveal {
+  visibility: hidden;
+  display: none;
+}
+
+div.passWrap div:last-of-type {
+  float: right;
+  width: 106px;
+  background: #8A886A;
+}
+
+@media screen and (max-width:960px) {
+  .passWrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .passWrap div {
+    font-size: 1.2rem;
+  }
+
+  .passWrap p:first-of-type {
+    width: 60%;
+    height: 37px;
+  }
+
+  .passWrap p input#password,
+  #salon .passWrap p input#password02 {
+    width: 100%;
+    height: 37px;
+  }
+
+  .passWrap p:last-of-type {}
+}
+
+@media screen and (max-width:768px) {
+  #member #loginWrap {
+    padding: 12% 10%;
+    text-align: left;
+  }
+  #member .passWrap {
+    width: 100%;
+  }
+  .passWrap div {
+    float: left;
+    font-size: 1.2rem;
+  }
+  .passWrap p:first-of-type {
+    width: 60%;
+    height: 37px;
+  }
+  .passWrap p input#password,
+  #salon .passWrap p input#password02 {
+    width: 100%;
+    height: 37px;
+    padding-left: 5px;
+  }
+}
+
+
+
+
+#salon #salonWrap p.name {
+  border: none;
+}
+#salonWrap .info{
+  margin-bottom: 10px;
+}
+#salonWrap .passWrap, #salonWrap .bnr{
+  margin-bottom: 10px;
+}
+.passWrap #login-btn, .passWrap #login-btn02 {
+  float: right;
+  color: #FFF;
+  border: 0;
+  border-style: none;
+  transition: 0.5s;
+  background: #93824c;
+  box-sizing: border-box;
+}
+#salon #salonWrap li p.bnr a {
+  position: relative;
+  color: #FFF;
+  line-height: 40px;
+  background: #93824c;
+  display: block;
+  transition: 0.5s;
+}
+#salon #salonWrap li p.bnr a:before {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  display: block;
+  content: '';
+  width: 14px;
+  height: 100%;
+  background: url(../crm/images/ico_blank.svg) no-repeat center center;
+}
+
+
+
+.titleM {
+  text-align: center;
+  font-size: 3.6rem;
+  margin-bottom: 30px;
+}
+@media screen and (max-width:768px) {
+  .titleM {
+    font-size: 2.0rem;
+  }
+}
+
+.bnrLink {
+  margin:0 auto;
+  text-align:center;
+  line-height:1em;
+}
+.bnrLink {
+  max-width:480px;
+}
+@media screen and (max-width:768px) {
+  .bnrLink {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.bnrLink a {
+  padding: 20px 10px;
+  display:block;
+  line-height: 1.3;
+}
+.dtlLink a:hover {
+  /*background: url(../common/img/icn_arrow_w.png) 94% 50% rgba(255,255,255,0.3) no-repeat;*/
+}
+.bnrLink.request a {
+  /*background: url(../common/img/icn_arrow_w.png) 90% 50% #cc9e43 no-repeat;*/
+  color: #FFFFFF;
+}
+.bnrLink.request a:hover {
+  /*background: url(../common/img/icn_arrow_w.png) 94% 50% #cc9e43 no-repeat;*/
+}
+.bnrLink.request a .en {
+  font-size: 1.2rem;
+  font-family: "Crimson Text", serif; 
+}
+
+.captionL, .captionR, .captionC {
+  font-size: 14px;
+  padding-top:2px;
+  line-height:1.4;
+}
+.captionL {
+  text-align:left;
+}
+.captionR {
+  text-align:right;
+}
+.captionC {
+  text-align:center;
+}
+@media screen and (max-width:960px) {
+  .captionR {
+    text-align:left;
+  }
+  .captionC {
+    text-align:left;
+  }
+}
