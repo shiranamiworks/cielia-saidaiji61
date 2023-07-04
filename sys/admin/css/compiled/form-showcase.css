@@ -1,0 +1,198 @@
+.form-page {
+  margin: 10px 20px; }
+  .form-page .form-wrapper {
+    margin-bottom: 40px; }
+    .form-page .form-wrapper .field-box {
+      margin-bottom: 40px;
+      margin-left: 0;
+      float: left;
+      width: 100%; }
+    .form-page .form-wrapper label.itemname {
+      display: inline-block;
+      float: left;
+      font-weight: 600;
+      cursor: auto;
+      font-size: 15px;
+      width: 170px;
+      text-align: left;
+      color: #555; }
+      .form-page .form-wrapper label.itemname span.comment {
+        display: block;
+        color: #999;
+        font-size: 11px;
+        line-height: 1.4; }
+      .form-page .form-wrapper label.itemname .require {
+        font-weight: bold;
+        color: #FF3300;
+        font-size: 11px;
+        padding: 0 3px; }
+    .form-page .form-wrapper input:-moz-placeholder {
+      font-style: italic; }
+    .form-page .form-wrapper input:-ms-input-placeholder {
+      font-style: italic; }
+    .form-page .form-wrapper input::-webkit-input-placeholder {
+      font-style: italic; }
+    .form-page .form-wrapper .field-item {
+      margin-left: 185px; }
+      .form-page .form-wrapper .field-item p.comment {
+        color: #999;
+        font-size: 13px;
+        line-height: 1.4; }
+        .form-page .form-wrapper .field-item p.comment.comment-top {
+          padding: 0 0 7px 0 !important;
+          margin: 0 !important; }
+        .form-page .form-wrapper .field-item p.comment.comment-btm {
+          padding: 7px 0 0 0 !important;
+          margin: 0 !important; }
+      .form-page .form-wrapper .field-item .error-message {
+        display: inline-block;
+        margin: 6px 0 0 0;
+        color: #FC354C;
+        font-size: 13px;
+        line-height: 1.4;
+        font-weight: bold;
+        padding: 3px 5px; }
+      .form-page .form-wrapper .field-item .img_preview {
+        margin: 10px 0; }
+        .form-page .form-wrapper .field-item .img_preview img {
+          width: 200px;
+          border: 2px solid #DDD;
+          padding: 2px;
+          cursor: pointer; }
+          .form-page .form-wrapper .field-item .img_preview img:hover {
+            border-color: #35BAC4; }
+      .form-page .form-wrapper .field-item .imgChkWrapper {
+        border: 3px solid #EEE !important;
+        cursor: pointer; }
+        .form-page .form-wrapper .field-item .imgChkWrapper:hover {
+          border: 3px solid #4cae4c !important; }
+      .form-page .form-wrapper .field-item .imgChked {
+        background: #EFEFEF url("../../img/bg_stripe_y.png") repeat 0 0;
+        border: 3px solid #4cae4c !important; }
+      .form-page .form-wrapper .field-item .item-registered {
+        position: relative; }
+        .form-page .form-wrapper .field-item .item-registered .imgChkWrapper {
+          background-image: none;
+          background-color: #FCE8E8 !important;
+          border: 3px solid #d9534f !important; }
+      .form-page .form-wrapper .field-item .primary-item,
+      .form-page .form-wrapper .field-item .notprimary-item {
+        position: absolute;
+        z-index: 100;
+        top: 11px;
+        left: 34px; }
+      .form-page .form-wrapper .field-item img.designimg_preview {
+        padding: 2px;
+        cursor: pointer; }
+      .form-page .form-wrapper .field-item .form-group-blocks .block-container {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #DDD; }
+        .form-page .form-wrapper .field-item .form-group-blocks .block-container .block-name {
+          font-size: 15px;
+          font-weight: bold; }
+        .form-page .form-wrapper .field-item .form-group-blocks .block-container .block-lists {
+          padding: 5px 15px 15px 15px;
+          margin-bottom: 15px;
+          background: #EFF5F7; }
+          .form-page .form-wrapper .field-item .form-group-blocks .block-container .block-lists .block-body {
+            overflow: hidden;
+            margin: 20px 0; }
+            .form-page .form-wrapper .field-item .form-group-blocks .block-container .block-lists .block-body label.block-itemname {
+              float: left;
+              width: 140px;
+              font-size: 13px; }
+              .form-page .form-wrapper .field-item .form-group-blocks .block-container .block-lists .block-body label.block-itemname .require {
+                color: #FF3300;
+                font-size: 11px;
+                padding: 0 3px; }
+              .form-page .form-wrapper .field-item .form-group-blocks .block-container .block-lists .block-body label.block-itemname span.comment {
+                display: block;
+                color: #999;
+                font-size: 11px;
+                line-height: 1.4; }
+            .form-page .form-wrapper .field-item .form-group-blocks .block-container .block-lists .block-body .block-item {
+              margin-left: 150px; }
+    .form-page .form-wrapper .predefined {
+      position: relative; }
+      .form-page .form-wrapper .predefined input {
+        padding-left: 40px; }
+      .form-page .form-wrapper .predefined .value {
+        position: absolute;
+        top: 6px; }
+    .form-page .form-wrapper label.checkbox-inline {
+      font-size: 14px;
+      font-weight: normal;
+      width: auto;
+      padding-right: 15px;
+      cursor: pointer;
+      line-height: 1.5em;
+      margin-left: 0 !important; }
+    .form-page .form-wrapper label.checkbox {
+      cursor: pointer;
+      color: #555; }
+    .form-page .form-wrapper label.radio-inline {
+      font-size: 14px;
+      font-weight: normal;
+      width: auto;
+      padding-right: 15px;
+      cursor: pointer;
+      line-height: 1.5em;
+      margin-left: 0 !important; }
+    .form-page .form-wrapper label.checkbox,
+    .form-page .form-wrapper label.radio {
+      font-weight: lighter; }
+      .form-page .form-wrapper label.checkbox input[type="checkbox"],
+      .form-page .form-wrapper label.checkbox input[type="radio"],
+      .form-page .form-wrapper label.radio input[type="checkbox"],
+      .form-page .form-wrapper label.radio input[type="radio"] {
+        font-size: large;
+        margin-left: 0px; }
+    .form-page .form-wrapper .wysi-column {
+      float: left;
+      width: 75%; }
+    .form-page .form-wrapper .column.pull-right label {
+      display: block;
+      width: 100%; }
+    .form-page .form-wrapper .column.pull-right .ui-select {
+      width: 250px; }
+    .form-page .form-wrapper .column.pull-right .input-group {
+      margin-bottom: 10px;
+      width: 250px; }
+    .form-page .form-wrapper .column.pull-right .input-datepicker {
+      width: 250px; }
+    .form-page .form-wrapper .select2-container {
+      margin-left: 0px; }
+
+#imgModal .modal-dialog {
+  width: auto !important;
+  min-width: 450px !important; }
+
+.img-layout-list {
+  width: 100%;
+  margin-top: 2em; }
+  .img-layout-list dt {
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
+    .img-layout-list dt img {
+      width: 100%; }
+  .img-layout-list dd {
+    padding: 5px 8px;
+    font-size: 0.85em; }
+    .img-layout-list dd.lead-text {
+      font-size: 1em;
+      padding-top: 10px;
+      font-weight: bold; }
+    .img-layout-list dd.name {
+      font-weight: bold; }
+    .img-layout-list dd.btn-select {
+      text-align: center;
+      padding-top: 15px; }
+    .img-layout-list dd.btn-select a.btn {
+      padding-left: 20px !important;
+      padding-right: 20px !important; }
+
+/*Responsive*/
+@media (max-width: 767px) {
+  .form-page .form-wrapper label.radio {
+    left: 0px; } }

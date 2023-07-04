@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+
+/*-------------------------------------
+gNavi
+---------------------------------------*/
+
+#gNavi dl:last-child{
+  border-bottom:1px solid #dedede;
+}
+#gNavi dl {
+  margin:0;
+}
+#gNavi dt {
+  font-weight: normal;
+}
+#gNavi p {
+  margin:0;
+}
+#gNavi dl dt a {
+  width:250px;
+  display:block;
+  color:#000;
+  cursor:pointer;
+  font-size:108%;
+  text-decoration:none;
+  border-top:1px solid #dedede;
+  background-color:#F3F3F3;
+  padding:15px 0 15px 45px;
+  background-position:17px 18px;
+  background-repeat:no-repeat;
+  background-image:url("../../img/icons/ico_05_g.png");
+}
+#gNavi dl.active dt a,
+#gNavi dl dt.open a {
+  background-color:#F3F3F3;
+}
+#gNavi dl dt a:hover{
+  color:#333;
+  border-top:1px solid #dedede;
+  background-color:#E2E2E2;
+}
+
+#gNavi dl.active dt a,
+#gNavi dl dt a:hover{
+  background-position:17px 18px;
+  background-repeat:no-repeat;
+  /*background-image:url("../../img/icons/ico_01_w.png");*/
+}
+
+#gNavi dl#Home dt a,
+.content .gnavi-icon-Home {background-image:url("../../img/icons/ico_01_g.png");}
+/*#gNavi dl#Home dt a:hover ,
+#gNavi dl#Home.active dt a {background-image:url("../../img/icons/ico_01_w.png");}*/
+#gNavi dl#Info dt a,
+.content .gnavi-icon-Info {background-image:url("../../img/icons/ico_14_g.png");}
+#gNavi dl#News dt a,
+.content .gnavi-icon-News {background-image:url("../../img/icons/ico_14_g.png");}
+/*#gNavi dl#Info dt a:hover ,
+#gNavi dl#Info.active dt a {background-image:url("../../img/icons/ico_02_w.png");}*/
+#gNavi dl#Event dt a,
+.content .gnavi-icon-Event {background-image:url("../../img/icons/ico_04_g.png");}
+#gNavi dl#Rooms dt a,
+.content .gnavi-icon-Rooms {background-image:url("../../img/icons/ico_04_g.png");}
+/*#gNavi dl#Event dt a:hover ,
+#gNavi dl#Event.active dt a {background-image:url("../../img/icons/ico_03_w.png");}*/
+#gNavi dl#Akiya dt a,
+.content .gnavi-icon-Akiya {background-image:url("../../img/icons/ico_11_g.png");}
+/*#gNavi dl#Akiya dt a:hover ,
+#gNavi dl#Akiya.active dt a {background-image:url("../../img/icons/ico_11_w.png");}*/
+#gNavi dl#Freepage dt a,
+.content .gnavi-icon-Freepage {background-image:url("../../img/icons/ico_13_g.png");}
+/*#gNavi dl#Freepage dt a:hover ,
+#gNavi dl#Freepage.active dt a {background-image:url("../../img/icons/ico_05_w.png");}*/
+#gNavi dl#Interview dt a,
+.content .gnavi-icon-Interview {background-image:url("../../img/icons/ico_09_g.png");}
+/*#gNavi dl#Interview dt a:hover ,
+#gNavi dl#Interview.active dt a {background-image:url("../../img/icons/ico_01_w.png");}*/
+#gNavi dl#Faq dt a,
+.content .gnavi-icon-Faq {background-image:url("../../img/icons/ico_12_g.png");}
+/*#gNavi dl#Faq dt a:hover ,
+#gNavi dl#Faq.active dt a {background-image:url("../../img/icons/ico_02_w.png");}*/
+#gNavi dl#Toppage dt a,
+.content .gnavi-icon-Toppage {background-image:url("../../img/icons/ico_03_g.png");}
+#gNavi dl#Account dt a,
+.content .gnavi-icon-Account {background-image:url("../../img/icons/ico_07_g.png");}
+#gNavi dl#Logout dt a,
+.content .gnavi-icon-Logout {background-image:url("../../img/icons/ico_05_g.png");}
+
+#gNavi dl dt a span {
+  display:block;
+  width:202px;
+  padding-right:22px;
+}
+#gNavi dl dt.menu_title a span {
+  background: url("../../img/icons/ico_sidenavi_cursor_up.png") no-repeat 94% 45%;
+}
+#gNavi dl dt.menu_title a:hover span,
+#gNavi dl.active dt.menu_title a span {
+  background-image:url("../../img/icons/ico_sidenavi_cursor_up_w.png");
+}
+#gNavi dl.active dt.menu_title a span,
+#gNavi dl dt.open a span {
+  background-image:url("../../img/icons/ico_sidenavi_cursor_down.png");
+}
+#gNavi dl.active dt.menu_title a span,
+#gNavi dl dt.open a:hover span {
+  background-image:url("../../img/icons/ico_sidenavi_cursor_down_w.png");
+}
+
+#gNavi dl dd{
+  display:none;
+}
+#gNavi dl.active dd{
+  display:block;
+}
+
+#gNavi dl dd a{
+  display:block;
+  padding:5px 0;
+  color:#333;
+  cursor:pointer;
+  text-decoration:none;
+  border-top:1px solid #f1f1f1;
+}
+#gNavi dl.active dt a {
+  background-color:#E2E2E2;
+}
+#gNavi dl dd a {
+  background:#FFF;
+}
+#gNavi dl dd a.active {
+  background:#FFF;
+  font-weight: bold;
+}
+#gNavi dl dd a:hover{
+  background:#FFFFE2;
+}
+#gNavi dl dd a span {
+  width:227px;
+  display:block;
+  padding:7px 20px 7px 48px;
+}
+#gNavi dl dd a.active span,
+#gNavi dl dd a:hover span{
+}
+
+#gNavi dl dd .submenu_items .submenu_item_title {
+  display:none;
+}
