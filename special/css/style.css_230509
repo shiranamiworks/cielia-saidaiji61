@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+@media only screen and (max-width:1280px) {}
+@media only screen and (max-width:768px) {}
+@media only screen and (max-width:480px) {}
+
+/*---------------------------------------------------------------
+
+ commonKeyvisual
+
+--------------------------------------------------------------- */
+.commonKeyvisual .imagearea {
+  background-image: url(../images/kv.jpg);
+}
+
+
+
+/*---------------------------------------------------------------
+
+ specialSection
+
+--------------------------------------------------------------- */
+.specialSection {
+  padding: 80px 0;
+  background-color: #000;
+}
+.specialSection .commonBdrTitle01 {
+  color: #fff;
+}
+.specialSection .commonBdrTitle01:before {
+  background-color: #fff;
+}
+.specialSection .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -30px;
+}
+.specialSection .list li {
+  width: 48.8889%;
+  margin-top: 30px;
+}
+.specialSection .list li a {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  height: 335px;
+  color: #fff;
+  text-decoration: none;
+}
+.specialSection .list li a .new {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  z-index: 5;
+}
+.specialSection .list li a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: no-repeat center center / cover;
+}
+.specialSection .list li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 50%;
+  background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(0,0,0,0.8) 100%);
+  background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(0,0,0,0.8) 100%);
+  background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(0,0,0,0.8) 100%);
+  z-index: 1;
+}
+.specialSection .list .texts {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 30px;
+  z-index: 2;
+}
+.specialSection .list .texts .ttl {
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 1.4;
+}
+.specialSection .list .texts .ttl small {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.5833em;
+}
+.specialSection .list .texts .txt {
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+.specialSection .list .texts .arw {
+  position: relative;
+  display: table;
+  padding-right: 70px;
+  color: #3bdede;
+  font-size: 15px;
+  line-height: 1;
+}
+.specialSection .list .texts .arw:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  content: '';
+  width: 60px;
+  height: 100%;
+  background: url(../../crm/images/icon-arrow-green.svg) no-repeat right center / 100% auto;
+}
+@media only screen and (min-width:769px) {
+  .specialSection .list li a:before {
+    transition: transform 0.5s;
+    transform: scale(1);
+  }
+  .specialSection .list li a:hover:before {
+    transform: scale(1.1);
+  }
+}
+
+.specialSection .list li.item01 a:before { background-image: url(../images/img01.jpg); }
+.specialSection .list li.item02 a:before { background-image: url(../images/column01.jpg); }
+.specialSection .list li.item03 a:before { background-image: url(../images/column03.jpg); }
+.specialSection .list li.item04 a:before { background-image: url(../images/column04.jpg); }
+.specialSection .list li.item05 a:before { background-image: url(../images/img05.jpg); }
+
+@media screen and (max-width:768px) {
+  .specialSection {
+    padding: 40px 0 60px;
+  }
+  .specialSection .list {
+    margin-top: 0;
+  }
+  .specialSection .list li {
+    width: calc(50% - 1px);
+    margin-top: 1px;
+  }
+  .specialSection .list li a {
+    height: 170px;
+  }
+  .specialSection .list li a:after {
+    height: 100%;
+  }
+  .specialSection .list .texts {
+    padding: 12px;
+  }
+  .specialSection .list .texts .ttl {
+    margin-bottom: 7px;
+    font-size: 16px;
+  }
+  .specialSection .list .texts .txt {
+    display: none;
+  }
+  .specialSection .list .texts .arw {
+    display: block;
+    width: 60px;
+    height: 10px;
+    padding-right: 0;
+    text-indent: -9999px;
+  }
+  .specialSection .list .texts .arw:before {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width:480px) {
+  .specialSection .list li a .new {
+    width: 40px;
+  }
+}
+
+
+
+/*---------------------------------------------------------------
+
+ modalArea
+
+--------------------------------------------------------------- */
+#modalArea {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  -webkit-overflow-scrolling: touch;
+  z-index: 999999;
+}
+#modalTable {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 60px 20px;
+}
+#modalCell {
+  display: table-cell;
+  vertical-align: middle;
+}
+#modalInner {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+#modalInner img {
+  max-width: 100%;
+  height: auto;
+}
+#modalContents {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56%;
+  outline: none;
+}
+#modalContents > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#modalInner .inVertical img {
+  max-width: 60%;
+}
+#modalClose {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+#modalClose:before,
+#modalClose:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  content: '';
+  width: 40px;
+  height: 2px;
+  margin-left: -20px;
+  background-color: #fff;
+}
+#modalClose:before {
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+#modalClose:after {
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+}
+@media only screen and (max-width:767px) {
+  #modalArea {
+    -webkit-overflow-scrolling: touch;
+  }
+}
