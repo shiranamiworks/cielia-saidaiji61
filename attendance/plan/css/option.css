@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+.searchTag-container {
+    width: 100%;
+    margin: 30px auto 0;
+    padding: 40px;
+    overflow: hidden;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+.tags-container {
+    margin: 0;
+    overflow: hidden;
+}
+.tags-container dt {
+    width:20%;
+    max-width: 120px;
+    float: left;
+    clear: both;
+    font-weight:bold;
+    line-height: 34px;
+}
+.tags-container dd {
+    width:80%;
+    margin: 0;
+    float: left;
+}
+.tag-list {
+    display: flex;
+    margin: 0 0 10px;
+    padding: 0;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.tag-item {
+    width: 180px;
+    margin: 0 10px 10px 0;
+    padding: 5px;
+    float: left;
+    list-style: none;
+    background: #d6d6d6;
+    text-align: center;
+    cursor: pointer;
+}
+.tag-item:hover {
+    opacity: .7;
+}
+.tag-item.selected {
+    background: #003c7a;
+    color:#fff;
+}
+.btn-drillDown {
+    max-width: 320px;
+    margin: 20px auto 0;
+    padding: 15px 50px;
+    border:1px solid #3c3c3c;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tab-list {
+    padding: 0 20px;
+    overflow: hidden;
+}
+.tab-list li {
+    float: left;
+    list-style: none;
+    cursor: pointer;
+    border: 1px solid #0a0a0a;
+}
+.tab-list li a {
+    display: block;
+    padding: 10px 32px;
+    text-decoration: none;
+    color: #000;
+}
+.tab-list li a:hover {
+    text-decoration: none;
+}
+.tab-list li a:visited {
+    color: #000;
+}
+.tab-list li:hover {
+    background: #95a8b7;
+}
+.tab-list li.active a {
+    color: #ffffff;
+}
+
+.image-container p {
+    display: none;
+}
+.image-container p.opened {
+    display: block;
+}
+.image-container p img {
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+.btn-drillDown{
+  float:none;
+  text-align: center;
+}
+.tag-item {
+    width: 48%;
+    margin: 0 2% 10px 0;
+    padding: 5px;
+    float: left;
+    list-style: none;
+    background: #e8e8e8;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.tag-list li[data-tag="breadth-60"] , .tag-list li[data-tag="breadth-80"], .tag-list li[data-tag="breadth-100"] {
+    margin: 0 0 10px 0;
+}
+}
+
+@media screen and (max-width:468px) {
+.searchTag-container {
+    width: 100%;
+    padding: 5%;
+ }
+.tags-container dt ,
+.tags-container dd {
+    width:100%;
+    line-height: 28px;
+}

@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@media only screen and (max-width:1280px) {}
+@media only screen and (max-width:768px) {}
+@media only screen and (max-width:480px) {}
+
+/*---------------------------------------------------------------
+
+ commonKeyvisual
+
+--------------------------------------------------------------- */
+.commonKeyvisual .imagearea {
+	background-image: url(../images/kv.jpg);
+}
+
+/* mapImage */
+.commonSection .mapImage {
+	padding: 36px;
+	text-align: center;
+	background-color: #000;
+}
+@media only screen and (max-width:768px) {
+	.commonSection .mapImage {
+		padding: 18px;
+	}
+}

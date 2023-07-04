@@ -1,0 +1,477 @@
+/*  charset ==================================================== */
+@charset "utf-8";
+
+
+a{
+  text-decoration: none;
+}
+
+.hanrei{
+  width:90%;
+  margin:5px auto 0;
+    color: #fff;
+}
+.main-title {
+    padding-bottom: 30px;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 4px;
+    padding-top: 50px;
+    color: #fff;
+}
+.searchTag-container .caption{
+  margin:15px auto 0;
+  background: none;
+  text-align: center;
+  font-size: 14px;
+}
+@media screen and (max-width: 768px){
+.main-title {
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+}
+.hanrei .sikin::before {
+  content: "";
+  background: url(../../sys/setting/img/icon_simu.png) center center no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.searchTag-container .caption{
+  margin:10px auto 0;
+  font-size: 12px;
+}
+}
+
+
+
+.tag-list li[data-tag="breadth-30"]{
+  -ms-flex-order:1;
+  -webkit-order:1;
+  order:1;
+}
+.tag-list li[data-tag="breadth-40"]{
+  -ms-flex-order:2;
+  -webkit-order:2;
+  order:2;
+}
+.tag-list li[data-tag="breadth-50"]{
+  -ms-flex-order:3;
+  -webkit-order:3;
+  order:3;
+}
+.tag-list li[data-tag="breadth-60"]{
+  -ms-flex-order:4;
+  -webkit-order:4;
+  order:4;
+}
+.tag-list li[data-tag="breadth-70"]{
+  -ms-flex-order:5;
+  -webkit-order:5;
+  order:5;
+}
+.tag-list li[data-tag="breadth-80"]{
+  -ms-flex-order:6;
+  -webkit-order:6;
+  order:6;
+}
+.tag-list li[data-tag="breadth-90"]{
+  -ms-flex-order:7;
+  -webkit-order:7;
+  order:7;
+}
+.tag-list li[data-tag="breadth-100"]{
+  -ms-flex-order:8;
+  -webkit-order:8;
+  order:8;
+}
+.tag-list li[data-tag="breadth-110"]{
+  -ms-flex-order:9;
+  -webkit-order:9;
+  order:9;
+}
+.tag-list li[data-tag="breadth-120"]{
+  -ms-flex-order:10;
+  -webkit-order:10;
+  order:10;
+}
+.tag-list li[data-tag="breadth-130"]{
+  -ms-flex-order:11;
+  -webkit-order:11;
+  order:11;
+}
+
+
+/* =========================================================
+
+鳥かご
+
+========================================================== */
+
+#torikago {
+  width: 100%;
+  margin: 52px auto 0;
+  table-layout: fixed;
+  max-width: 1280px;
+}
+
+@media screen and (max-width:1280px) {
+	#torikago {
+		max-width: 700px;
+	}
+}
+
+#torikago table {
+  width: 100%;
+  margin: 40px auto;
+}
+#torikago td {
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-top:none;
+  border-right:0;
+  box-sizing: border-box;
+  color: #fff;
+}
+#torikago td a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 17px;
+  padding-top: 5px;
+  color: #3F4144;
+  background-color: #e2e7ed;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+#torikago td a:hover {
+  opacity: 0.85;
+}
+#torikago p {
+  line-height: 1.0em !important;
+  padding-top: 12px !important;
+  margin: 0;
+}
+#torikago .td-con a {
+  font-size: 1.4rem !important;
+}
+#torikago .price {
+  font-size: 1.4rem !important;
+}
+
+@media screen and (max-width:768px) {
+#torikago {
+  width: 800px;
+}
+#torikago p {
+  line-height: .8em !important;
+  padding-top: 12px !important;
+  margin: 0;
+}
+#torikago .td-con a {
+  font-size: 1.4rem !important;
+}
+#torikago .price {
+  font-size: 1.4rem !important;
+}
+}
+
+/* 階層　*/
+#torikago .floor {
+  width: 8%;
+  color:#3F4144;
+  text-align: center;
+  vertical-align: bottom;
+  line-height: 50px;
+	background: #f1f1f1;
+	border: none;
+}
+
+/* 共用部　*/
+#torikago .public {
+  line-height: 57px;
+  font-size: 12px;
+  line-height: 1.1em;
+  color: #000;
+  vertical-align: middle;
+  background-color: #e6e6e6;
+}
+
+/* 棟区分け　*/
+#torikago .pdl {
+  border-right: 5px solid #fff;
+}
+
+.azimuth{
+  padding:7px 0;
+  background-color: #edf0f5 !important;
+}
+
+#torikago .right_space {
+	border-right: 15px solid #f1f1f1;
+}
+
+/* 方位　*/
+#torikago .direction {
+  color:#3F4144;
+  text-align: center;
+  line-height: 50px;
+	background: #f1f1f1;
+	border: none;
+}
+
+
+/**********************************************
+
+色変更
+
+**********************************************/
+
+/* 次期分譲 */
+#torikago td.jiki {
+  background: #e2e7ed;
+}
+#torikago td.jiki a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 26px;
+  color: #3F4144;
+  background-color: #e2e7ed;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+#torikago td.jiki a:hover {
+  background-color: #c1cede;
+}
+
+/* 契約済み */
+#torikago td.keiyaku {
+  color: #3F4144 !important;
+  background: #d2d2d2;
+}
+#torikago td .keiyaku-inner {
+  padding-top: 5px;
+}
+
+/* 非分譲　*/
+#torikago .hibai {
+  background: #000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 21px;
+}
+
+/* 販売価格 */
+#torikago .price {
+  line-height: 1em;
+  font-size: 120%;
+  padding-top: 9px;
+  padding-bottom: 5px;
+}
+
+/* ブランク */
+#torikago .blank {
+  background: none;
+}
+
+/* 資金計算ボタン */
+#torikago td.has-simu-btn .td-con {
+  position: relative;
+}
+#torikago td.has-simu-btn a,
+#torikago td.has-simu-btn .td-inner {
+  padding-bottom: 35px;
+/*  padding: 20px 0 0 0;*/
+}
+#torikago .btn-simulation button {
+  border: none;
+  padding: 0;
+  text-align: center;
+  background:none;
+}
+#torikago td.has-simu-btn .btn-simulation {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  width: 50%;
+}
+#torikago .btn-furniture {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 50%;
+}
+#torikago td.has-simu-btn .btn-furniture a {
+  padding: 1px 0;
+  font-size: 11px !important;
+  text-align: center;
+  color: #666;
+  background: none;
+  text-decoration: none;
+}
+
+#torikago td.separate_right {
+	border-right: 5px solid #f1f1f1;
+}
+
+
+
+/**********************************************
+
+間取り詳細 
+
+**********************************************/
+
+.image-container {
+    max-width: 1000px;
+    margin:0 auto;
+}
+.image-container p{
+  display: none;
+}
+.image-container p.opened{
+  display: block;
+}
+
+/* タブ切り替え */
+.tab-list {
+  max-width: 730px;
+  margin:0 auto;
+  padding: 30px 20px 0;
+  overflow: hidden;
+  list-style: none;
+}
+.tab-list li {
+	 width:19%;
+  max-width: 200px;
+  margin-left:1.25%;
+  background:#959fb1;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  list-style: none;
+  cursor: pointer;
+  border:none;
+}
+.tab-list li:first-child {
+ margin-left:0;
+}
+
+
+@media screen and (max-width:768px) {
+.tab-list li{
+	width:32%;
+ max-width: 100%;
+ margin:2% 0 0 2%;
+}
+.tab-list li:nth-child(4){
+ margin-left:0;
+}
+.image-container img{
+  max-width: 100%;
+  width:100%;
+}
+}
+
+@media screen and (max-width:468px) {
+.tab-list li{
+	width:48%;
+ max-width: 100%;
+ margin:2% 0 0 2%;
+  padding: 0;
+}
+.tab-list li:nth-child(1),
+.tab-list li:nth-child(3),
+.tab-list li:nth-child(5){
+ margin-left:0;
+}
+.tab-list li:nth-child(4){
+ margin-left:2%;
+}
+.image-container img{
+  max-width: 100%;
+  width:100%;
+}
+}
+
+/* 棟区分け　*/
+
+#torikago .pdl {
+  border-right: 5px solid #fff;
+}
+
+.captionBottom {
+    font-size: 80%;
+    max-width: 1200px;
+    margin: 20px auto 0;
+    padding: 0 3%;
+}
+#torikagoSp{
+    margin: 0 auto 80px;
+    width: 95%;
+}
+
+@media screen and (max-width:768px) {
+#torikagoSp{
+    overflow: scroll;
+}
+}
+
+/**********************************************
+
+オリジナル
+
+**********************************************/
+
+.tab-list li a {
+    padding: 10px 0;
+    color: #1E320E;
+}
+.tab-list li a:hover {
+    text-decoration: none;
+    opacity: 0.85;
+}
+.tab-list li a:visited {
+    color:#fff;
+}
+.tab-list li a:hover {
+    opacity: 0.7;
+}
+.tab-list li.active a {
+    background: #323a49;
+    color:#fff;
+}
+.sp{display: none;}
+
+/* スマホ表示 */
+@media screen and (max-width:768px) {
+    .sp{display: block;}
+.torikago_swipe {
+    width: 90%;
+    margin:6% auto 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+
+  }
+
+  .torikago_swipe::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background: url(../images/icon_swipe.png) top center no-repeat;
+    background-size: contain;
+  }
+}
+

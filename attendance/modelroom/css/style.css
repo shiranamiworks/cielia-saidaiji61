@@ -1,0 +1,568 @@
+@charset "utf-8";
+
+@media only screen and (max-width:1280px) {}
+@media only screen and (max-width:768px) {}
+@media only screen and (max-width:480px) {}
+
+.commonBigTitle01.small {
+  font-size: 1.7em;
+  text-align: center;
+  line-height: 2;
+}
+@media only screen and (max-width:768px) {
+  .commonBigTitle01.small {
+    font-size: 1em;
+    text-align: left;
+  }
+}
+
+/*---------------------------------------------------------------
+
+ commonKeyvisual
+
+--------------------------------------------------------------- */
+.commonKeyvisual .imagearea {
+  background-image: url(../images/kv.jpg);
+}
+
+#freeContentsArea {
+  background-color: #f1f1f1;
+}
+
+/*---------------------------------------------------------------
+
+ torikago
+
+--------------------------------------------------------------- */
+#torikagoWrap {
+  background-color: #000;
+}
+#torikagoWrap .lead {
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+#torikago {
+  width: 100%;
+  margin: 0 auto;
+  table-layout: fixed;
+  background-color: #000;
+}
+#torikago a {
+  text-decoration: none;
+}
+#torikagoSp{
+  width:98%;
+  margin:0 auto;
+  padding: 50px 0;
+}
+#torikago table {
+  width: 100%;
+  margin: 40px auto;
+}
+#torikago td {
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+#torikago td a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 5px;
+  color: #fff;
+  background-color: #554a46;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+#torikago p {
+  line-height: 1.2em !important;
+  margin: 0;
+}
+#torikago .td-con a {
+  font-size: 15px;
+}
+#torikago .price {
+  font-size: 15px;
+}
+
+/* 階層　*/
+#torikago .floor {
+  width: 8%;
+  background: #000;
+  color:#FFF;
+  text-align: center;
+  vertical-align: bottom;
+  line-height: 50px;
+}
+
+/* 共用部　*/
+#torikago .public {
+  line-height: 57px;
+  font-size: 15px;
+  line-height: 1.1em;
+  color: #000;
+  vertical-align: middle;
+  background-color: #e6e6e6;
+}
+
+/* 棟区分け　*/
+#torikago .pdl {
+  border-right: 5px solid #fff;
+}
+
+
+
+/* 色指定
+-------------------------*/
+
+/* 次期分譲 */
+#torikago td.jiki {
+  background: #efefef;
+}
+#torikago td.jiki a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  color: #6b5316;
+  background-color: #efefef;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+#torikago td.jiki a:hover {
+  background-color: #CC9E43;
+  color: #FFFFFF;
+}
+
+#torikago td.gray_out {
+  background: #666666;
+}
+
+#torikago td.gray_out span {
+  display: block;
+  padding-bottom: 18px;
+  padding-top: 18px;
+}
+
+#torikago td.gray_out p {
+  color: #000000;
+  font-size: 15px;
+}
+
+
+/* 契約済み */
+#torikago td.keiyaku {
+  color: #FFF !important;
+  background: #bebfba;
+}
+#torikago td .keiyaku-inner {
+  padding-top: 5px;
+}
+
+/* 非分譲　*/
+#torikago .hibai {
+  background: #000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* 販売価格 */
+#torikago .price {
+  line-height: 1em;
+  font-size: 15px;
+  padding-top: 9px;
+  padding-bottom: 5px;
+}
+
+/* ブランク */
+#torikago .blank {
+  background: none;
+}
+
+/* 資金計算ボタン */
+#torikago td.has-simu-btn .td-con {
+  position: relative;
+}
+#torikago td.has-simu-btn a,
+#torikago td.has-simu-btn .td-inner {
+  padding-bottom: 35px;
+/*  padding: 20px 0 0 0;*/
+}
+#torikago .btn-simulation button {
+  border: none;
+  padding: 0;
+  text-align: center;
+  background:none;
+}
+#torikago td.has-simu-btn .btn-simulation {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  width: 50%;
+}
+#torikago .btn-furniture {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 50%;
+}
+#torikago td.has-simu-btn .btn-furniture a {
+  padding: 1px 0;
+  font-size: 15px;
+  text-align: center;
+  color: #666;
+  background: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1080px){
+  #torikagoSp{
+    overflow-x: scroll;
+  }
+  #torikago {
+    width: 1580px !important;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+}
+
+.nolink {
+  background: #000 !important;
+  border: 1px solid #000 !important;
+  color: #FFF !important;
+}
+
+#torikago td.right_border {
+  border-right: 15px solid #000000;
+}
+
+#torikago td.left_border {
+  border-left: 15px solid #000000;
+}
+
+
+
+/*---------------------------------------------------------------
+
+ planList
+
+--------------------------------------------------------------- */
+.planList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px -15px 60px;
+}
+.planList li {
+  box-sizing: border-box;
+  width: 33.3333%;
+  padding: 30px 15px 0;
+}
+.planList li a {
+  position: relative;
+  display: block;
+  border-bottom: #000 solid 1px;
+}
+.planList li .new:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  content: '';
+  width: 60px;
+  height: 60px;
+  background: url(../images/ico_new.png) no-repeat top right / contain;
+  z-index: 2;
+}
+.planList li .limited {
+  border-color: #003c7a;
+}
+@media only screen and (max-width:768px) {
+  .planList {
+    margin: 30px -10px 60px;
+  }
+  .planList li {
+    width: 50%;
+    padding: 30px 10px 0;
+  }
+}
+@media only screen and (max-width:480px) {
+  .planList {
+    display: block;
+    margin: 50px 0;
+  }
+  .planList li {
+    width: auto;
+    padding: 0;
+  }
+  .planList li + li {
+    margin-top: 30px;
+  }
+  .planList li .new:before {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+/*---------------------------------------------------------------
+
+ planDetail
+
+--------------------------------------------------------------- */
+.planDetail {
+  box-sizing: border-box;
+  max-width: 1352px;
+  margin: 130px auto 80px;
+  padding: 45px 20px;
+  color: #3b3b41;
+  background-color: #fff;
+}
+.planDetail .flex {
+  display: flex;
+  max-width: 840px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.planDetail .flex .image {
+  width: 64.2857%;
+  order: 2;
+}
+.planDetail .flex .image .guide {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 0;
+}
+.planDetail .flex .image .guide img {
+  max-width: 160px;
+  display: inline-block;
+}
+.planDetail .flex .texts {
+  width: 35.7143%;
+  order: 1;
+}
+.planDetail .flex .texts .name {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  background-color: #f2f2f2;
+  text-align: center;
+  line-height: 1;
+}
+.planDetail .flex .texts .name > * {
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0 10px;
+}
+.planDetail .flex .texts .name .type {
+  font-size: 24px;
+}
+.planDetail .flex .texts .name .type strong {
+  font-size: 62px;
+  font-weight: 500;
+}
+.planDetail .flex .texts .name .tag {
+  margin-bottom: 8px;
+  padding: 3px 10px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #000;
+}
+.planDetail .flex .texts .ldks {
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: #e0e0e0 solid 1px;
+  font-size: 24px;
+  line-height: 1.1;
+}
+.planDetail .flex .texts .ldks p + p {
+  margin-top: 10px;
+}
+.planDetail .flex .texts .ldks strong {
+  font-size: 1.33em;
+}
+.planDetail .flex .texts .ldks small {
+  font-size: 0.75em;
+}
+.planDetail .flex .texts .tableType {
+  padding: 15px 0;
+  border-bottom: #e0e0e0 solid 1px;
+}
+.planDetail .flex .texts .tableType dl {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.planDetail .flex .texts .tableType dl > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+.planDetail .flex .texts .tableType dt {
+  width: 128px;
+  font-size: 12px;
+  text-align: center;
+}
+.planDetail .flex .texts .tableType dd {
+  font-size: 16px;
+}
+.planDetail .flex .texts .area dd {
+  font-size: 42px;
+}
+.planDetail .flex .texts .area dd span {
+  font-size: 0.71em;
+}
+.planDetail .flex .texts .area dd small {
+  font-size: 0.619em;
+}
+.planDetail .flex .texts .textList {
+  margin: 40px 0;
+}
+.planDetail .flex .texts .textList li {
+  position: relative;
+  padding-left: 1.2em;
+  color: #003c7a;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.planDetail .flex .texts .textList li:before {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  display: block;
+  content: '';
+  width: .75em;
+  height: .75em;
+  border-radius: 50%;
+  background: #003c7a;
+}
+
+.planDetail .backBtn {
+  margin-top: 40px;
+  text-align: center;
+}
+.planDetail .backBtn a {
+  display: block;
+  padding: 20px 0;
+  color: #003c7a;
+  font-size: 16px;
+  text-decoration: none;
+  border: #003c7a solid 1px;
+}
+.planDetail .backBtn a span {
+  display: inline-block;
+  padding-left: 75px;
+  background: url(../../../common/images/ico_arw_left_blue.svg) no-repeat left center / 60px auto;
+}
+
+@media only screen and (max-width:1280px) {
+  .planDetail {
+    margin: 50px auto 80px;
+  }
+}
+@media only screen and (max-width:768px) {
+  .planDetail {
+    margin: 40px auto 60px;
+    padding: 35px 20px;
+  }
+  .planDetail .flex {
+    display: block;
+  }
+  .planDetail .flex .image {
+    width: auto;
+    text-align: center;
+  }
+  .planDetail .flex .texts {
+    width: auto;
+    margin-bottom: 30px;
+  }
+  .planDetail .flex .texts .name > * {
+    margin: 0 5px;
+  }
+  .planDetail .flex .texts .name .type {
+    font-size: 20px;
+  }
+  .planDetail .flex .texts .name .type strong {
+    font-size: 36px;
+  }
+  .planDetail .flex .texts .name .tag {
+    margin-bottom: 4px;
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+  .planDetail .flex .texts .ldks {
+    font-size: 18px;
+  }
+  .planDetail .flex .texts .tableType dt {
+    width: 110px;
+    font-size: 11px;
+  }
+  .planDetail .flex .texts .tableType dd {
+    font-size: 14px;
+  }
+  .planDetail .flex .texts .area dd {
+    font-size: 30px;
+  }
+  .planDetail .flex .texts .textList {
+    margin-bottom: 0;
+  }
+  .planDetail .flex .texts .textList li {
+    font-size: 14px;
+  }
+  .planDetail .backBtn a {
+    font-size: 14px;
+  }
+  .planDetail .backBtn a span {
+    padding-left: 50px;
+    background-size: 40px auto;
+  }
+
+}
+
+/*---------------------------------------------------------------
+
+.textArea
+
+--------------------------------------------------------------- */
+/* .commonKeyvisual .textArea {
+  bottom: 40%;
+} */
+/* .commonKeyvisual .textArea .title {
+  text-align: center;
+} */
+.contentsArea {
+  margin-top: 80px;
+  padding: 0 15px;
+}
+.contentsArea .titleText {
+  font-size: 32px;
+  text-align: center;
+}
+.contentsArea .inBox {
+  max-width: 900px;
+  margin: 30px auto;
+  line-height: 0;
+}
+.contentsArea .inBox .pos {
+  position: relative;
+  width: 100%;
+  padding-bottom: 61.1111%;
+}
+.contentsArea .inBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100% !important;
+  display: block;
+}
+@media only screen and (max-width:768px) {
+  .contentsArea .titleText {
+    font-size: 18px;
+  }
+}
