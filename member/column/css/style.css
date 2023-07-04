@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+@media only screen and (max-width: 1280px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 480px) {
+}
+.bgCap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 3px 5px;
+  color: #fff;
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  line-height: 1.2;
+}
+
+/*---------------------------------------------------------------
+
+ mainVisual
+
+--------------------------------------------------------------- */
+.mainVisual {
+  position: relative;
+  display: table;
+  height: 499px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background: url(../images/kv01.jpg) no-repeat center center / cover;
+}
+.mainVisual .cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.mainVisual .title {
+  font-size: 40px;
+  letter-spacing: 0.25em;
+  text-shadow: 0px 0px 14px #000;
+}
+.mainVisual .thema {
+  display: table;
+  margin: 15px auto;
+  padding: 5px 25px;
+  font-size: 24px;
+  border: #fff solid 1px;
+  letter-spacing: 0.25em;
+  text-shadow: 0px 0px 14px #000;
+}
+.mainVisual .en {
+  font-size: 24px;
+  letter-spacing: 0.3em;
+  text-shadow: 0px 0px 7px #000;
+}
+@media only screen and (max-width: 768px) {
+  .mainVisual {
+    height: 250px;
+  }
+  .mainVisual .title {
+    font-size: 26px;
+  }
+  .mainVisual .thema {
+    padding: 3px 13px;
+    font-size: 16px;
+  }
+  .mainVisual .en {
+    font-size: 16px;
+  }
+}
+
+.columnIndex {
+  background: #fff;
+  padding-bottom: 80px;
+}
+
+.columnIndex::before {
+  content: "";
+  display: table;
+}
+
+.commonBigTitle01.small {
+  font-size: 1.7em;
+  text-align: center;
+  line-height: 2;
+}
+@media only screen and (max-width: 768px) {
+  .commonBigTitle01.small {
+    font-size: 1em;
+    text-align: left;
+  }
+}
+
+.listImg ul {
+  max-width: 1320px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px auto 0;
+}
+.listImg ul li {
+  width: calc(100% / 3 - (5px * 6 / 3));
+  margin: 10px 5px 0;
+}
+.listImg a {
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  .listImg {
+    display: block;
+  }
+  .listImg ul li {
+    width: 100%;
+  }
+  .listImg ul li + li {
+    margin-top: 20px;
+  }
+  .listImg ul li img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+@media only screen and (max-width:1280px) {}
+@media only screen and (max-width:768px) {}
+@media only screen and (max-width:480px) {}
+
+
+
+
+
+/*---------------------------------------------------------------
+
+ commonKeyvisual
+
+--------------------------------------------------------------- */
+.commonKeyvisual .imagearea {
+  background-image: url(../images/column03/kv.jpg);
+}
+
+
+/*---------------------------------------------------------------
+
+ modalSlideAera
+
+--------------------------------------------------------------- */
+.commonSection .modalSlideAera {
+	position: relative;
+}
+.commonSection .thumbnails ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+.commonSection .thumbnails li {
+	/* width: calc(20% - 2px); */
+	width: calc(16.6667% - 2px);
+	margin: 2px 1px 0;
+	background-color: #000;
+	cursor: pointer;
+}
+.commonSection .thumbnails li img {
+	transition: opacity 0.3s;
+	opacity: 0.4;
+}
+.commonSection .thumbnails li.slick-active img,
+.commonSection .thumbnails li:hover img {
+	opacity: 1;
+}
+.commonSection .modalSlideAera .slick-arrow {
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	width: 40px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	transform: translateY(-50%);
+	background-color: rgba(59,59,65,0.9);
+	cursor: pointer;
+	text-indent: -9999px;
+	z-index: 5;
+}
+.commonSection .modalSlideAera .slick-arrow:before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	content: '';
+	width: 10px;
+	height: 10px;
+	transform: rotate(45deg);
+	margin-top: -5px;
+}
+.commonSection .modalSlideAera .slick-prev {
+	left: 0;
+}
+.commonSection .modalSlideAera .slick-next {
+	right: 0;
+}
+
+.commonSection .modalSlideAera .slick-prev:before {
+	margin-left: -2px;
+	border-left: #fff solid 1px;
+	border-bottom: #fff solid 1px;
+}
+.commonSection .modalSlideAera .slick-next:before {
+	margin-left: -8px;
+	border-right: #fff solid 1px;
+	border-top: #fff solid 1px;
+}
+@media only screen and (max-width:768px) {
+	.commonSection .modalSlideAera .slick-arrow {
+		width: 20px;
+		height: 80px;
+	}
+}
+
+section{
+	padding-bottom: 40px;
+}
+
+ h5{
+	font-size: 24px;
+	margin: 30px 0 20px;
+	display: flex;
+  align-items: center; /* 垂直中心 */
+}
+
+
+#freeContentsArea{
+	background-color: #f1f1f1;
+	background-image: url(../images/column03/bg_text.png);
+	background-position: top 560px right;
+	background-repeat: no-repeat;
+	color: #000;
+}
+
+/*.cont1,.cont2,.cont3{
+	width: 90%;
+}
+*/
+
+
+.cont1 .left{
+	width: 48%;
+	margin-right: 2%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.cont1 .right{
+	width: 48%;
+	display: inline-block;
+}
+
+
+
+.cont1 .left .commonLead{
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width:768px) {
+
+	section{
+	padding-bottom: 0px;
+	}
+
+	 h5{
+	font-size: 21px;
+	}
+
+		#freeContentsArea{
+		background-size: 50%;
+	}
+
+
+	.cont1 .left{
+		width: 100%;
+		margin-right: 0;
+		display: block;
+	}
+
+	.cont1 .right{
+		width: 100%;
+		display: block;
+	}
+
+}
+
+
+.cont2 .inner{
+	width: 90%;
+	max-width: 1350px;
+	margin: 0 auto;
+}
+
+.cont2 .left{
+	width: 48%;
+	margin-right: 2%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+
+.cont2 .right{
+	width: 48%;
+	display: inline-block;
+}
+
+.cont2 .right .commonLead{
+	margin-bottom: 0;
+}
+
+
+@media only screen and (max-width:768px) {
+
+	.cont2 .left{
+		width: 100%;
+		margin-right: 0;
+		display: block;
+	}
+
+	.cont2 .right{
+		width: 100%;
+		display: block;
+	}
+
+}
+
+
+.cont3 .left{
+	width: 48%;
+	margin-right: 2%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+
+.cont3 .right{
+	width: 48%;
+	display: inline-block;
+}
+
+@media only screen and (max-width:768px) {
+
+	.cont3 .left{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 2%;
+		display: block;
+	}
+
+	.cont3 .right{
+		width: 100%;
+		display: block;
+	}
+
+}
+
+
+.cont6{
+	width: 100%;
+	background:linear-gradient(#3e4a85, #1e326d);
+	color: #fff;
+	padding: 60px 0;
+}
+
+.cont6 .inner{
+	width: 90%;
+	max-width: 1310px;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width:768px) {
+
+	.cont6{
+	padding: 30px 0;
+}
+}
