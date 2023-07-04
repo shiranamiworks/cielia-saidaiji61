@@ -1,0 +1,83 @@
+
+<div class="crm--banners">
+  <div class="wide">
+    <div class="commonBdrTitle01">特集＆キャンペーン</div>
+  </div>
+  <ul class="list fadeActionArea">
+    <li>
+      <a href="{$root}model/" class="item" target="_blank" rel="noopener noreferrer">
+        <figure><img src="{$root}crm/images/topbnr_modelroom.jpg" alt="モデルルーム"><!-- <figcaption class="commonImgcap">アクセス</figcaption> --></figure>
+      </a>
+    </li>
+
+    <li>
+      <a href="{$root}special/column05.html" class="item" target="_blank" rel="noopener noreferrer">
+        <figure><img src="{$root}crm/images/topbnr_column05.jpg" alt="benefit"><!-- <figcaption class="commonImgcap">アクセス</figcaption> --></figure>
+      </a>
+    </li>
+
+    <li>
+      <a href="{$root}design/" class="item" target="_blank" rel="noopener noreferrer">
+        <figure><img src="{$root}crm/images/topbnr_design.jpg" alt="デザイン"><!-- <figcaption class="commonImgcap">アクセス</figcaption> --></figure>
+      </a>
+    </li>
+
+    <li>
+      <a href="{$root}special/zeh.html" class="item" target="_blank" rel="noopener noreferrer">
+        <figure><img src="{$root}crm/images/topbnr_zeh.jpg" alt="ZEH"><!-- <figcaption class="commonImgcap">現地案内図</figcaption> --></figure>
+      </a>
+    </li>
+
+    <li>
+      <a href="{$root}special/column04.html" class="item" target="_blank" rel="noopener noreferrer">
+        <figure><img src="{$root}crm/images/topbnr_column04.jpg" alt="子育て"><!-- <figcaption class="commonImgcap">現地案内図</figcaption> --></figure>
+      </a>
+    </li>
+
+    <!--li>
+      <a href="{$root}access/" class="item" target="_blank" rel="noopener noreferrer">
+        <figure><img src="{$root}crm/images/topbnr_access.jpg" alt="アクセス">< <figcaption class="commonImgcap">アクセス</figcaption>></figure>
+      </a>
+    </li-->
+
+
+    <li>
+      <a href="{$root}plan/" class="item" target="_blank" rel="noopener noreferrer">
+        <figure><img src="{$root}crm/images/topbnr_plan.jpg" alt="間取り"><!-- <figcaption class="commonImgcap">アクセス</figcaption> --></figure>
+      </a>
+    </li>
+
+
+    <li>
+      <a href="https://www.cielia.com/" class="item" target="_blank" rel="noopener noreferrer">
+        <figure><img src="{$root}crm/images/news_001.jpg" alt="幸せをデザインする シエリア"></figure>
+      </a>
+    </li>
+
+
+
+	  <!-- <li>
+      <a href="{$root}position/" class="item" target="_blank" rel="noopener noreferrer">
+        <figure><img src="{$root}crm/images/topbnr_map.jpg" alt="現地案内図"></figure>
+      </a>
+    </li> -->
+
+    <!-- <li>
+      <a href="{$root}location/" class="item" target="_blank" rel="noopener noreferrer">
+        <figure><img src="{$root}crm/images/topbnr_location.jpg" alt="ロケーション"></figure>
+      </a>
+    </li> -->
+
+    <!-- <li>
+      <a href="{$root}voice/" class="item" target="_blank" rel="noopener noreferrer">
+        <figure><img src="{$root}crm/images/topbnr_voice.jpg" alt="街の声"></figure>
+      </a>
+    </li> -->
+
+
+
+
+
+  </ul>
+  <div class="slideControls"><div class="el"></div></div>
+</div>
