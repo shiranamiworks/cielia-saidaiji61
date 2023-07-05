@@ -160,7 +160,7 @@
 }
 
 
-.harf_comment{
+.harf_comment,.comment{
 	width: 100%;
 	max-width: 1352px;
 	margin: 50px auto;
@@ -172,10 +172,11 @@
 	margin: 0 1%;
 }
 
-.harf_comment li h5{
+.harf_comment li h5,.comment li h5{
 	font-size: 1.3em;
 	margin: 15px 0 20px;
 }
+
 
 @media only screen and (max-width:768px) {
 	.harf_comment li{
