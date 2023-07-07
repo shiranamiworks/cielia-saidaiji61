@@ -525,6 +525,10 @@
     background-color: #4D76A2;
     color: #fff;
 }
+.point01 a{
+    color: #fff;
+    text-decoration: none;
+}
 .point01 .font120{
     font-size: 120%;
 }
