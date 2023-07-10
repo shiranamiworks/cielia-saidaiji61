@@ -349,7 +349,7 @@ line-height: 1; line-height: 1;
 .crm--contentsbtns .list li.special a:before { background-image: url(../images/contentsbtn_img06.jpg); }
 .crm--contentsbtns .list li.design a:before { background-image: url(../images/contentsbtn_img07.jpg); }
 .crm--contentsbtns .list li.safety a:before { background-image: url(../images/contentsbtn_img08.jpg); }
-.crm--contentsbtns .list li.voice a:before { background-image: url(../images/contentsbtn_img09.jpg); }
+.crm--contentsbtns .list li.voice a:before { background-image: url(../images/contentsbtn_img11.jpg); }
 .crm--contentsbtns .list li.brand a:before { background-image: url(../images/contentsbtn_img10.jpg); }
 
 @media screen and (max-width:768px) {
