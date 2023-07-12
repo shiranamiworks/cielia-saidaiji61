@@ -136,6 +136,7 @@
 .specialSection .list li.item06 a:before { background-image: url(../images/column05.jpg); }
 .specialSection .list li.item05 a:before { background-image: url(../images/img05.jpg); }
 .specialSection .list li.item07 a:before { background-image: url(../images/img07.jpg); }
+.specialSection .list li.item08 a:before { background-image: url(../images/img08.jpg); }
 
 @media screen and (max-width:768px) {
   .specialSection {
