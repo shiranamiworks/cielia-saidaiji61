@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>バーチャルモデル｜シエリア西大寺</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.rwdImageMaps.js"></script>
+</head>
+<body>
+<div id="container">
+    <div id="wrapper">
+        <div id="header">
+            <img src="images/header.jpg">
+        </div>
+        <div id="main">
+            <div id="photoarea">
+                <img id="photo" alt="" src="video/05.jpg">
+            </div>
+            <div id="zumen">
+                <img src="images/zumen5.jpg" usemap="#zumen_Map">
+                <map name="zumen_Map">
+                    <area shape="rect" alt="" coords="214,86,259,149"  href="movie1.html">
+                    <area shape="rect" alt="" coords="214,183,259,246" href="movie2.html">
+                    <area shape="poly" alt="" coords="278,337, 326,337, 326,377, 284,393, 278,393" href="movie3.html">
+                    <area shape="rect" alt="" coords="27,488,86,547"   href="movie4.html">
+                    <area shape="poly" alt="" coords="297,390, 327,390, 327,436, 265,436, 265,414" href="movie5.html">
+                </map>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('img[usemap]').rwdImageMaps();
+</script>
+</body>
+</html>
