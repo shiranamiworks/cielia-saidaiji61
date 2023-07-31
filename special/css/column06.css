@@ -112,18 +112,122 @@ section{
 }
 
 .vrmr{
-  padding: 50px 0 120px;
-  display: flex;
+  position: relative;
+  padding: 50px 0 0;
+}
+.vrmr .title{
+  font-size: 36px;
+  text-align: center;
+}
+.vrmr .lead{
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+  background-color: #283a75;
+  margin-top: 20px;
+  padding: 5px;
 }
 .vrmr .image{
-  width: 100%;
-  margin-right: 10px;
+  background-image:url(images/column06/model-img.jpg);
+  margin: 30px auto 0;
 }
-.vrmr .movie{
+.vrmr img,.vrmr video{
   width: 100%;
+  height: 100%;
 }
-.vrmr .movie video{
+.vrmr .click-btn{
+  position: absolute;
   width: 100%;
+  top: 50%;
+  text-align: center;
+}
+.vrmr .click-btn .sp{
+  display: none;
+}
+.vrmr .click-btn a:hover{
+  opacity: .9;
+}
+.vrmr .click-btn a{
+  position: relative;
+}
+.vrmr video:focus {
+  outline: none;
+}
+.vrmr .modal-wrapper{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 40px 10px;
+  text-align: center;
+  background: rgba(0,0,0,.8) !important;
+}
+.vrmr .modal-wrapper:not(:target){
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s,vidibility .3s;
+}
+.vrmr .modal-wrapper:target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .4s, visibility .4s;
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+.vrmr .modal-wrapper::after {
+    display: inline-block;
+    height: 100%;
+    margin-left: -.05em;
+    vertical-align: middle;
+    content: "";
+}
+.vrmr .modal-wrapper .modal-window{
+    box-sizing: border-box;
+    display: inline-block;
+    z-index: 20;
+    position: relative;
+    width: 94%;
+    max-width: 800px;
+    padding: 0;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+.vrmr .modal-wrapper .modal-window .modal-content{
+  max-height: 80vh;
+  overflow-y: auto;
+  text-align: left;
+}
+.vrmr .modal-overlay{
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 !important;
+  background: rgba(0,0,0,.8) !important;
+}
+.vrmr .modal-overlay:hover {
+  opacity: 1 !important;
+}
+.vrmr .modal-wrapper .modal-close{
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  color: #fff !important;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0;
+  padding: 0;
+}
+.vrmr .modal-wrapper .modal-close:hover {
+   color: #2b2e38 !important;
 }
 @media only screen and (max-width:768px) {
   h5{
@@ -132,11 +236,34 @@ section{
    display: flex;
    align-items: center;
  }
-  .vrmr {
-    display: block;
+  .vrmr .title{
+    font-size: 24px;
+ }
+  .vrmr .lead{
+    font-size: 18px;
+    margin-bottom: 20px;
  }
   .vrmr .image{
     margin: 0 auto 10px;
+ }
+  .vrmr .click-btn .pc{
+    display: none;
+ }
+  .vrmr .click-btn .sp{
+    display: block;
+ }
+  .vrmr .click-btn{
+    top: 55%;
+ }
+}
+@media only screen and (max-width:450px) {
+   .vrmr .click-btn{
+    top: 60%;
+ }
+}
+@media only screen and (max-width:375px) {
+   .vrmr .click-btn{
+    top: 65%;
  }
 }
 
