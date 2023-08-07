@@ -128,8 +128,18 @@ section{
   padding: 5px;
 }
 .vrmr .image{
+  position: relative;
   background-image:url(images/column06/model-img.jpg);
   margin: 30px auto 0;
+}
+.vrmr .image .cap{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  color: #fff;
+  font-size: 10px;
+  text-shadow: 0px 0px 1px #000, 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000;
 }
 .vrmr img,.vrmr video{
   width: 100%;
