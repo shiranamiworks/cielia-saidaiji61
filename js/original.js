@@ -47,6 +47,11 @@ $(function(){
   $('#modalContents').on('click', function(e){
     e.stopPropagation();
   });
+   $('#movieArea .movie').on('click', function(){
+    const el ='<iframe width="1000" height="562" src="https://www.youtube.com/embed/dE1reOr0DlI?si=-lRPvXfic7bIDRAA?&mute=1&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+    $('figure',this).fadeOut(400);
+    $('.el',this).append(el);
+  });
 });
 
 
