@@ -536,6 +536,13 @@
 .point01 .font80{
     font-size: 80%;
 }
+.point02{
+    text-align: center;
+    margin-top: 15px;
+    padding: 15px 0;
+    background-color: #003c7a;
+    color: #fff;
+}
 
 .chu{
   font-size: 0.8em;
