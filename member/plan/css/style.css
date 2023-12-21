@@ -451,7 +451,12 @@
   padding-left: 75px;
   background: url(../../../common/images/ico_arw_left_blue.svg) no-repeat left center / 60px auto;
 }
-
+.planDetail .plan_price {
+  text-align: center;
+  margin: 100px auto 0;
+  max-width: 840px;
+  width: 96%;
+}
 @media only screen and (max-width:1280px) {
   .planDetail {
     margin: 50px auto 80px;
