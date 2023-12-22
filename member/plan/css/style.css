@@ -339,6 +339,21 @@
   width: 35.7143%;
   order: 1;
 }
+.planDetail .flex .texts .box {
+  background-color: #f2f2f2;
+  padding-top: 10px;
+}
+.planDetail .flex .texts .topic {
+  padding: 5px 0;
+  background-color: #B9B07D;
+  text-align: center;
+  line-height: 1;
+  border: 1px solid #B9B07D;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0 10px;
+  font-size: 17px;
+}
 .planDetail .flex .texts .name {
   margin-bottom: 20px;
   padding: 10px 0;
