@@ -185,7 +185,7 @@ crm--footer
 }
 @media screen and (max-width:768px) {
   .crm--footer {
-    padding: 40px 0 100px;
+    padding: 40px 0 0;
   }
   .crm--footer .logos {
     display: table;
@@ -216,6 +216,7 @@ scroll pageTop
 
 --------------------------------------------------------------------------- */
 .crm--pageTop {
+  display: none;
   position: fixed;
   right: 10px;
   bottom: 10px;

@@ -15,6 +15,7 @@ ver.2020.04.01
 
 --------------------------------------------------------------- */
 .crm--sideFixNav {
+  display: none;
   position: fixed;
   top: 50%;
   right: 0;

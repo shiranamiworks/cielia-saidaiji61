@@ -11,6 +11,7 @@ ver.2020.04.01
 =============================================================== */
 
 /* 全画面ビジュアル表示時のスクロール制御 */
+/*
 body {
   opacity: 1;
   overflow: auto;
@@ -27,6 +28,7 @@ body {
   overflow: auto;
   height: auto;
 }
+*/
 
 
 
@@ -37,6 +39,7 @@ blockBrand
 //全画面ビジュアル
 
 --------------------------------------------------------------- */
+/*
 .crm--blockBrand {
   display: block;
   width: 100%;
@@ -48,15 +51,18 @@ blockBrand
   right: 0;
   bottom: 0;
 }
+*/
 
 /* web storage */
 .is-active .crm--blockBrand {
   display: none;
 }
+/*
 .switch .crm--blockBrand {
   animation: brandFadeOut 3s ease-in-out forwards;
   transform: translateY(0);
 }
+*/
 
 @keyframes brandFadeOut {
   0% {
@@ -75,6 +81,7 @@ blockBrand
 }
 
 .crm--blockBrand .brandImg {
+  display: none;
   position: relative;
   width: 100%;
   height: 100%;
@@ -96,6 +103,7 @@ blockBrand
   z-index: 1;
 } */
 .crm--blockBrand .btn {
+  display: none;
   width: 180px;
   padding: 15px 0;
   position: absolute;
@@ -109,6 +117,7 @@ blockBrand
   z-index: 5;
 }
 
+/*
 .pulse,
 .pulse:hover,
 .pulse:focus {
@@ -116,6 +125,7 @@ blockBrand
   animation: pulse 3.5s infinite;
   box-shadow: 0 0 0 1em rgba(255, 255, 255, 0);
 }
+*/
 
 @keyframes pulse {
   0% {

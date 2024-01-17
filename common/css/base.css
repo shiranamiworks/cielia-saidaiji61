@@ -59,9 +59,11 @@ img[src$=".svg"] {
   content: '';
   width: 100%;
   height: 60%;
+/*
   background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(0,0,0,0.8) 100%);
   background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(0,0,0,0.8) 100%);
   background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(0,0,0,0.8) 100%);
+*/
   z-index: 1;
 }
 .commonKeyvisual .imagearea.dark:after {
@@ -82,6 +84,7 @@ img[src$=".svg"] {
   z-index: 3;
 }
 .commonKeyvisual .textArea {
+  display: none;
   position: absolute;
   width: 100%;
   left: 0;
@@ -167,6 +170,7 @@ img[src$=".svg"] {
 /* commonSection
 ------------------------------*/
 .commonSection {
+  display: none;
   margin-top: 80px;
   margin-bottom: 80px;
 }
@@ -547,4 +551,80 @@ img[src$=".svg"] {
     -moz-transform: rotate(-45deg);
   }
 }
+/*---------------------------------------------------------------
 
+ sold out
+
+--------------------------------------------------------------- */
+.crm--ownersLogin{
+    padding:40px 0;
+    background: #efefef;
+}
+.crm--ownersLogin h4{
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #181878;
+}
+.crm--ownersLogin h4 .eTtl{
+    display: block;
+    padding-top: 5px;
+    letter-spacing: 7px;
+    text-align: center;
+    font-size: 14px;
+    opacity: .7;
+}
+.crm--ownersLogin a{
+    display: block;
+    max-width: 420px;
+    margin: 0 auto 20px;
+    padding: 15px 0;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    background: #181878;
+    text-align: center;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.35);
+    transition: 0.4s;
+}
+.crm--ownersLogin a:hover{
+    opacity: 0.7;
+}
+.crm--ownersLogin .desc{
+    font-size: 14px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    .crm--ownersLogin{
+        padding:5% 0;
+    }
+    .crm--ownersLogin h4{
+        padding-bottom: 3%;
+        font-size: 22px;
+    }
+    .crm--ownersLogin h4 .eTtl{
+        font-size: 12px;
+    }
+    .crm--ownersLogin a{
+        width: 90%;
+        margin: 0 auto 2%;
+        padding: 15px 0;
+        font-size: 16px;
+        letter-spacing: 2px;
+        -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.25);
+        box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.25);
+    }
+    .crm--ownersLogin a:hover{
+        opacity: 0.7;
+    }
+    .crm--ownersLogin .desc{
+        font-size: 14px;
+        text-align: center;
+    }
+}

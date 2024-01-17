@@ -236,11 +236,11 @@ commonKeyvisual
   max-width: 445px;
 }
 .commonKeyvisual .imagearea {
-  background-image: url(../images/kv.jpg);
+  background-image: url(../images/soldout.jpg);
 }
 @media only screen and (max-width:768px) {
   .commonKeyvisual .imagearea {
-    background-image: url(../images/kv_sp.jpg);
+    background-image: url(../images/soldout_sp.jpg);
   }
   .commonKeyvisual .textArea {
     color: #3b3b41;

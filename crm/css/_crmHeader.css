@@ -47,6 +47,7 @@ crm--header
 /* globalnavi
 -------------------------------- */
 .crm--header .globalnavi {
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
