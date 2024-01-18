@@ -235,32 +235,43 @@ commonKeyvisual
 .commonKeyvisual .title img {
   max-width: 445px;
 }
+/*
 .commonKeyvisual .imagearea {
   background-image: url(../images/soldout.jpg);
 }
+*/
+
 @media only screen and (max-width:768px) {
+
+/*
   .commonKeyvisual .imagearea {
     background-image: url(../images/soldout_sp.jpg);
   }
+*/
   .commonKeyvisual .textArea {
     color: #3b3b41;
     background-color: #fff;
   }	
 }
-@media only screen and (min-width:769px) and (max-width:1280px) {
+/*
+@media only screen and (min-width:769px) and (max-width:1024px) {
   .commonKeyvisual {
     height: calc(100vh - 100px);
+    height: calc(40vh - 40px);
   }
 }
-@media only screen and (min-width:1281px) {
+@media only screen and (min-width:1025px) {
   .commonKeyvisual {
     height: calc(100vh - 80px);
   }
 }
+*/
 @media only screen and (max-width:768px) {
+/*
   .commonKeyvisual .imagearea {
     padding-bottom: 89.6%;
   }
+*/
 }
 
 
